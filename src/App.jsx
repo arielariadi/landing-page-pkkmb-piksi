@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 // components
 import NavbarComponent from './components/NavbarComponent';
+import FooterComponent from './components/FooterComponent';
 
 // pages
 import LandingPage from './pages/LandingPage';
@@ -17,6 +18,8 @@ function App() {
 				<Route path="/" element={<LandingPage />} />
 				<Route path="/beasiswa-kip" element={<BeasiswaKipPage />} />
 			</Routes>
+
+			<FooterComponent />
 		</>
 	);
 }

@@ -108,44 +108,39 @@
 	font-weight: 600;
 }
 
-.carousel-wrapper {
+.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan {
 	margin-top: 50px;
 	cursor: grab;
 }
 
-.carousel-wrapper:active {
+.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan:active {
 	cursor: grabbing;
 }
 
-.carousel-wrapper {
+.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan {
 	position: relative;
 	overflow: hidden;
 }
 
-.carousel-wrapper .custom-list {
+.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan .custom-list {
 	list-style: none;
 	padding-left: 0;
 }
 
-.carousel-wrapper li {
-	/* display: flex;
-	align-items: center; */
+.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan li {
 	margin-bottom: 10px;
 }
 
-.mySwiper {
+.jenjang-pendidikan .mySwiper {
 	height: 430px;
 }
 
-.mySwiper .swiper-slide {
-	/* display: flex;
-	align-items: center;
-	justify-content: center; */
+.jenjang-pendidikan .mySwiper .swiper-slide {
 	height: 100%;
 	overflow: hidden;
 }
 
-.mySwiper .swiper-slide img {
+.jenjang-pendidikan .mySwiper .swiper-slide img {
 	height: 100%;
 	/* height: auto; */
 }
@@ -160,18 +155,128 @@
 	}
 }
 
-.mySwiper .swiper-slide img {
+.jenjang-pendidikan
+	.mySwiper
+	.swiper-slide
+	.carousel-img-jenjang-pendidikan
+	img {
 	width: 100%;
 	height: auto;
 	animation: blob 6s infinite;
 	transition: transform 0.3s ease-in-out;
-	max-height: 500px; /* Atur batas tinggi maksimal gambar */
-	object-fit: cover; /* Agar gambar sesuai dengan ukuran */
+	max-height: 500px;
+	object-fit: cover;
 }
-
 /* End Jenjang Pendidikan */
 
-/* Responsive CSS */
+/* Info PMB */
+.info-pmb {
+	background-color: #d3d3d333;
+	min-height: 85vh;
+}
+
+.info-pmb .info-pmb-header {
+	text-align: center;
+	font-family: 'Archivo', sans-serif;
+	letter-spacing: 10px;
+	padding-top: 30px;
+}
+
+.info-pmb .info-pmb-header h4 {
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+.info-pmb .info-pmb-header-detail {
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+}
+
+.info-pmb .info-pmb-header-detail h2 {
+	font-size: 1.9rem;
+	font-weight: 600;
+}
+
+.info-pmb .info-pmb-wrapper {
+	margin-top: 40px;
+}
+
+.info-pmb .info-pmb-wrapper .card {
+	width: 18rem;
+}
+
+.info-pmb .info-pmb-wrapper img {
+	width: 4rem;
+}
+/* End Info PMB */
+
+/* Beasiswa */
+.beasiswa {
+	margin: 40px;
+}
+
+.beasiswa .beasiswa-header {
+	text-align: center;
+	font-family: 'Archivo', sans-serif;
+	letter-spacing: 10px;
+}
+
+.beasiswa .beasiswa-header h4 {
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+.beasiswa .beasiswa-header-detail {
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+}
+
+.beasiswa .beasiswa-header-detail h2 {
+	font-size: 1.9rem;
+	font-weight: 600;
+}
+
+.beasiswa .carousel-wrapper-beasiswa {
+	margin-top: 50px;
+	cursor: grab;
+}
+
+.beasiswa .carousel-wrapper-beasiswa:active {
+	cursor: grabbing;
+}
+
+.beasiswa .carousel-wrapper-beasiswa {
+	position: relative;
+	overflow: hidden;
+}
+
+.beasiswa .carousel-wrapper-beasiswa p {
+	max-width: 80%;
+	text-align: justify;
+	margin-top: 30px;
+}
+
+.beasiswa .mySwiper {
+	height: 430px;
+}
+
+.beasiswa .mySwiper .swiper-slide {
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+	height: 100%;
+	overflow: hidden;
+}
+
+.beasiswa .mySwiper .swiper-slide img {
+	height: 100%;
+}
+
+/* End Beasiswa */
+
+/******* Responsive CSS *******/
 @media screen and (max-width: 992px) {
 	.landing-page section {
 		background: linear-gradient(var(--primary-color), var(--secondary-color));
@@ -244,30 +349,104 @@
 
 	/* Jenjang Pendidikan */
 	.jenjang-pendidikan .jenjang-pendidikan-header h4 {
-		font-size: 1.2rem;
+		font-size: 24px;
+		letter-spacing: 8px;
 	}
 
 	.jenjang-pendidikan .jenjang-pendidikan-header-detail h2 {
-		font-size: 1.5rem;
+		font-size: 20px;
 	}
 
-	.carousel-wrapper {
+	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan {
 		margin-top: 25px;
 	}
 
-	.carousel-wrapper h3 {
+	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan h3 {
 		text-align: center;
 		font-size: 1.3rem;
 	}
 
-	.carousel-wrapper ul li {
-		font-size: 1.1rem;
+	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan ul li {
+		font-size: 1rem;
 	}
 
-	.carousel-img {
+	.jenjang-pendidikan .carousel-img-jenjang-pendidikan {
 		display: none !important;
 	}
 	/* End Jenjang Pendidikan */
+
+	/* Info PMB */
+	.info-pmb .info-pmb-header h4 {
+		font-size: 24px;
+		text-align: center;
+		letter-spacing: 5px;
+	}
+
+	.info-pmb .info-pmb-header-detail h2 {
+		font-size: 20px;
+		max-width: 100%;
+		margin-top: 15px;
+		text-align: center;
+	}
+
+	.info-pmb .info-pmb-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.info-pmb .info-pmb-wrapper .card {
+		width: 100%;
+	}
+
+	.info-pmb .info-pmb-wrapper img {
+		width: 2rem;
+	}
+
+	.info-pmb .info-pmb-wrapper .card .card-title {
+		font-size: 20px;
+	}
+
+	.info-pmb .info-pmb-wrapper .card .card-text {
+		font-size: 16px;
+	}
+	/* End Info PMB */
+
+	/* Beasiswa */
+	.beasiswa {
+		margin-top: 40px;
+	}
+
+	.beasiswa .beasiswa-header h4 {
+		font-size: 20px;
+		letter-spacing: 6px;
+	}
+
+	.beasiswa .beasiswa-header-detail h2 {
+		font-size: 20px;
+	}
+
+	.beasiswa .carousel-wrapper-beasiswa {
+		margin-top: 25px;
+	}
+
+	.beasiswa .carousel-wrapper-beasiswa h3 {
+		font-size: 1.3rem;
+	}
+
+	.beasiswa .carousel-wrapper-beasiswa p {
+		max-width: 100%;
+		margin-top: 10px;
+	}
+
+	.beasiswa .carousel-wrapper-beasiswa ul li {
+		text-align: left;
+	}
+
+	.beasiswa .carousel-img-beasiswa {
+		display: none !important;
+	}
+	/* End Beasiswa */
 }
 
 @media (max-width: 375px) {
@@ -336,30 +515,104 @@
 
 	/* Jenjang Pendidikan */
 	.jenjang-pendidikan .jenjang-pendidikan-header h4 {
-		font-size: 1.4rem;
+		font-size: 20px;
+		letter-spacing: 8px;
 	}
 
 	.jenjang-pendidikan .jenjang-pendidikan-header-detail h2 {
-		font-size: 1.2rem;
+		font-size: 20px;
 	}
 
-	.carousel-wrapper {
+	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan {
 		margin-top: 25px;
 	}
 
-	.carousel-wrapper h3 {
+	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan h3 {
 		text-align: center;
 		font-size: 1.3rem;
 	}
 
-	.carousel-wrapper ul li {
+	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan ul li {
 		font-size: 1rem;
 	}
 
-	.carousel-img {
+	.jenjang-pendidikan .carousel-img-jenjang-pendidikan {
 		display: none !important;
 	}
 	/* End Jenjang Pendidikan */
+
+	/* Info PMB */
+	.info-pmb .info-pmb-header h4 {
+		font-size: 20px;
+		text-align: center;
+		letter-spacing: 5px;
+	}
+
+	.info-pmb .info-pmb-header-detail h2 {
+		font-size: 20px;
+		max-width: 100%;
+		margin-top: 15px;
+		text-align: center;
+	}
+
+	.info-pmb .info-pmb-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.info-pmb .info-pmb-wrapper .card {
+		width: 100%;
+	}
+
+	.info-pmb .info-pmb-wrapper img {
+		width: 2rem;
+	}
+
+	.info-pmb .info-pmb-wrapper .card .card-title {
+		font-size: 20px;
+	}
+
+	.info-pmb .info-pmb-wrapper .card .card-text {
+		font-size: 16px;
+	}
+	/* End Info PMB */
+
+	/* Beasiswa */
+	.beasiswa {
+		margin-top: 40px;
+	}
+
+	.beasiswa .beasiswa-header h4 {
+		font-size: 20px;
+		letter-spacing: 7px;
+	}
+
+	.beasiswa .beasiswa-header-detail h2 {
+		font-size: 20px;
+	}
+
+	.beasiswa .carousel-wrapper-beasiswa {
+		margin-top: 25px;
+	}
+
+	.beasiswa .carousel-wrapper-beasiswa h3 {
+		font-size: 1.3rem;
+	}
+
+	.beasiswa .carousel-wrapper-beasiswa p {
+		max-width: 100%;
+		margin-top: 10px;
+	}
+
+	.beasiswa .carousel-wrapper-beasiswa ul li {
+		text-align: left;
+	}
+
+	.beasiswa .carousel-img-beasiswa {
+		display: none !important;
+	}
+	/* End Beasiswa */
 }
 
 @media (max-width: 320px) {
@@ -426,30 +679,113 @@
 
 	/* Jenjang Pendidikan */
 	.jenjang-pendidikan .jenjang-pendidikan-header h4 {
-		font-size: 1.4rem;
+		font-size: 18px;
+		letter-spacing: 7px;
 	}
 
 	.jenjang-pendidikan .jenjang-pendidikan-header-detail h2 {
-		font-size: 1.1rem;
+		font-size: 18px;
 	}
 
-	.carousel-wrapper {
+	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan {
 		margin-top: 25px;
 	}
 
-	.carousel-wrapper h3 {
+	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan h3 {
 		text-align: center;
 		font-size: 1.2rem;
 	}
 
-	.carousel-wrapper ul li {
+	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan ul li {
 		text-align: left;
 	}
 
-	.carousel-img {
+	.jenjang-pendidikan .carousel-img-jenjang-pendidikan {
 		display: none !important;
 	}
 	/* End Jenjang Pendidikan */
+
+	/* Info PMB */
+	.info-pmb {
+		padding-bottom: 30px;
+	}
+
+	.info-pmb .info-pmb-header h4 {
+		font-size: 18px;
+		text-align: center;
+		letter-spacing: 5px;
+	}
+
+	.info-pmb .info-pmb-header-detail h2 {
+		font-size: 18px;
+		max-width: 100%;
+		margin-top: 15px;
+		text-align: center;
+	}
+
+	.info-pmb .info-pmb-header-detail p {
+		font-size: 13px;
+		text-align: center;
+	}
+
+	.info-pmb .info-pmb-wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.info-pmb .info-pmb-wrapper .card {
+		width: 100%;
+	}
+
+	.info-pmb .info-pmb-wrapper img {
+		width: 2rem;
+	}
+
+	.info-pmb .info-pmb-wrapper .card .card-title {
+		font-size: 18px;
+	}
+
+	.info-pmb .info-pmb-wrapper .card .card-text {
+		font-size: 14px;
+	}
+	/* End Info PMB */
+
+	/* Beasiswa */
+	.beasiswa {
+		margin-top: 40px;
+	}
+
+	.beasiswa .beasiswa-header h4 {
+		font-size: 18px;
+		letter-spacing: 7px;
+	}
+
+	.beasiswa .beasiswa-header-detail h2 {
+		font-size: 18px;
+	}
+
+	.beasiswa .carousel-wrapper-beasiswa {
+		margin-top: 25px;
+	}
+
+	.beasiswa .carousel-wrapper-beasiswa h3 {
+		font-size: 1.2rem;
+	}
+
+	.beasiswa .carousel-wrapper-beasiswa p {
+		max-width: 100%;
+		margin-top: 10px;
+	}
+
+	.beasiswa .carousel-wrapper ul li {
+		text-align: left;
+	}
+
+	.beasiswa .carousel-img-beasiswa {
+		display: none !important;
+	}
+	/* End Beasiswa */
 }
 
-/* End Responsive CSS */
+/******* End Responsive CSS *******/

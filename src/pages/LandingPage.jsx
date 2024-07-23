@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useEffect, useRef } from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -85,18 +85,18 @@ const LandingPage = () => {
 				</section>
 			</div>
 
-			<div className="jenjang-pendidikan">
+			<div className="jenjang-pendidikan" id="jenjangPendidikan">
 				<section className="w-100 min-vh-100 d-flex">
 					<Container>
 						<div className="jenjang-pendidikan-header">
-							<h4>Jenjang Pendidikan</h4>
+							<h4>JENJANG PENDIDIKAN</h4>
 						</div>
 
 						<div className="jenjang-pendidikan-header-detail">
 							<h2>Membangun Masa Depan dengan Pendidikan Berkualitas</h2>
 						</div>
 
-						<div className="carousel-wrapper">
+						<div className="carousel-wrapper-jenjang-pendidikan">
 							<Swiper
 								spaceBetween={50}
 								slidesPerView={1}
@@ -163,19 +163,9 @@ const LandingPage = () => {
 															(Digital Geography, GIS & Documentary Film)
 														</span>
 													</li>
-													<li>
-														<FontAwesomeIcon
-															icon={faCircleDot}
-															style={{ color: 'green', marginRight: '8px' }}
-														/>
-														S21-Geografi{' '}
-														<span>
-															(Digital Geography, GIS & Documentary Film)
-														</span>
-													</li>
 												</ul>
 											</Col>
-											<Col className="carousel-img">
+											<Col className="carousel-img-jenjang-pendidikan">
 												<img
 													className="d-block w-100"
 													src="src/assets/img/hero-img.jpeg"
@@ -228,9 +218,9 @@ const LandingPage = () => {
 															icon={faCircleDot}
 															style={{ color: 'green', marginRight: '8px' }}
 														/>
-														S1-Teknik Elektro{' '}
+														S21-Geografi{' '}
 														<span>
-															(Power Systems, Telecommunications, Robotics)
+															(Digital Geography, GIS & Documentary Film)
 														</span>
 													</li>
 													<li>
@@ -238,44 +228,14 @@ const LandingPage = () => {
 															icon={faCircleDot}
 															style={{ color: 'green', marginRight: '8px' }}
 														/>
-														S1-Teknik Elektro{' '}
+														S21-Geografi{' '}
 														<span>
-															(Power Systems, Telecommunications, Robotics)
-														</span>
-													</li>
-													<li>
-														<FontAwesomeIcon
-															icon={faCircleDot}
-															style={{ color: 'green', marginRight: '8px' }}
-														/>
-														S1-Teknik Elektro{' '}
-														<span>
-															(Power Systems, Telecommunications, Robotics)
-														</span>
-													</li>
-													<li>
-														<FontAwesomeIcon
-															icon={faCircleDot}
-															style={{ color: 'green', marginRight: '8px' }}
-														/>
-														S1-Teknik Elektro{' '}
-														<span>
-															(Power Systems, Telecommunications, Robotics)
-														</span>
-													</li>
-													<li>
-														<FontAwesomeIcon
-															icon={faCircleDot}
-															style={{ color: 'green', marginRight: '8px' }}
-														/>
-														S1-Teknik Elektro{' '}
-														<span>
-															(Power Systems, Telecommunications, Robotics)
+															(Digital Geography, GIS & Documentary Film)
 														</span>
 													</li>
 												</ul>
 											</Col>
-											<Col className="carousel-img">
+											<Col className="carousel-img-jenjang-pendidikan">
 												<img
 													className="d-block w-100"
 													src="src/assets/img/hero-img.jpeg"
@@ -285,7 +245,173 @@ const LandingPage = () => {
 										</Row>
 									</Container>
 								</SwiperSlide>
-								{/* Tambahkan SwiperSlide lain sesuai kebutuhan */}
+							</Swiper>
+						</div>
+					</Container>
+				</section>
+			</div>
+
+			<div className="info-pmb" id="infoPmb">
+				<section className="w-100 d-flex">
+					<Container>
+						<div className="info-pmb-header">
+							<h4>INFO PMB</h4>
+						</div>
+
+						<div className="info-pmb-header-detail">
+							<h2>Panduan Lengkap Untuk Calon Mahasiswa Baru</h2>
+						</div>
+
+						<div className="info-pmb-wrapper d-flex justify-content-center gap-3">
+							<Card>
+								<Card.Body>
+									<Card.Img
+										variant="top"
+										src="src/assets/img/registration-icon.png"
+										className="d-flex mx-auto"
+									/>
+
+									<Card.Title className="text-center mt-4">Konten 1</Card.Title>
+
+									<Card.Text className="text-center mt-3">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Velit in consequuntur, vel enim cumque error id, eaque
+										explicabo optio dolorum nihil doloribus! Consequuntur,
+									</Card.Text>
+								</Card.Body>
+							</Card>
+
+							<Card>
+								<Card.Body>
+									<Card.Img
+										variant="top"
+										src="src/assets/img/registration-icon.png"
+										className="d-flex mx-auto"
+									/>
+
+									<Card.Title className="text-center mt-4">Konten 2</Card.Title>
+
+									<Card.Text className="text-center mt-3">
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+										Aperiam, expedita? Assumenda a dolorem totam repellendus
+										laudantium nihil cupiditate accusantium temporibus, omnis
+										vitae
+									</Card.Text>
+								</Card.Body>
+							</Card>
+
+							<Card>
+								<Card.Body>
+									<Card.Img
+										variant="top"
+										src="src/assets/img/registration-icon.png"
+										className="d-flex mx-auto"
+									/>
+
+									<Card.Title className="text-center mt-4">Konten 3</Card.Title>
+
+									<Card.Text className="text-center mt-3">
+										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
+										similique suscipit, rerum iusto qui veniam doloremque iure
+										expedita a, pariatur maxime culpa ver
+									</Card.Text>
+								</Card.Body>
+							</Card>
+
+							<Card>
+								<Card.Body>
+									<Card.Img
+										variant="top"
+										src="src/assets/img/registration-icon.png"
+										className="d-flex mx-auto"
+									/>
+
+									<Card.Title className="text-center mt-4">Konten 4</Card.Title>
+
+									<Card.Text className="text-center mt-3">
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+										sequi ad molestias dolore, nemo voluptatibus itaque corrupti
+										totam, commodi quae omnis. Neque
+									</Card.Text>
+								</Card.Body>
+							</Card>
+						</div>
+					</Container>
+				</section>
+			</div>
+
+			<div className="beasiswa" id="beasiswa">
+				<section className="w-100 min-vh-100 d-flex">
+					<Container>
+						<div className="beasiswa-header">
+							<h4>BEASISWA</h4>
+						</div>
+
+						<div className="beasiswa-header-detail">
+							<h2>Peluang Emas untuk Meraih Beasiswa</h2>
+						</div>
+						<div className="carousel-wrapper-beasiswa">
+							<Swiper
+								spaceBetween={50}
+								slidesPerView={1}
+								pagination={{ clickable: true }}
+								modules={[Navigation, Pagination, Autoplay]}
+								ref={swiperRef}
+								className="mySwiper">
+								<SwiperSlide>
+									<Container>
+										<Row>
+											<Col>
+												<h3>
+													Kuliah 100% Gratis Dengan Kartu Indonesia Pintar
+												</h3>
+												{/* <h5>Program Sarjana (S1)</h5> */}
+												<p>
+													Lorem ipsum dolor sit, amet consectetur adipisicing
+													elit. Saepe delectus sint minima minus voluptate
+													suscipit a fugiat quam dolorem, deleniti, recusandae
+													repellat, dolore illum. Veritatis necessitatibus sunt
+													deleniti rem nulla! Lorem ipsum dolor sit amet,
+													consectetur adipisicing elit. Laborum quidem at,
+												</p>
+											</Col>
+											<Col className="carousel-img-beasiswa">
+												<img
+													className="d-block w-100"
+													src="src/assets/img/person.png"
+													alt="First slide"
+												/>
+											</Col>
+										</Row>
+									</Container>
+								</SwiperSlide>
+								<SwiperSlide>
+									<Container>
+										<Row>
+											<Col>
+												<h3>
+													Kuliah 100% Gratis Dengan Kartu Indonesia Pintar
+												</h3>
+
+												<p>
+													Lorem ipsum dolor sit, amet consectetur adipisicing
+													elit. Saepe delectus sint minima minus voluptate
+													suscipit a fugiat quam dolorem, deleniti, recusandae
+													repellat, dolore illum. Veritatis necessitatibus sunt
+													deleniti rem nulla! Lorem ipsum dolor sit amet,
+													consectetur adipisicing elit. Laborum quidem at
+												</p>
+											</Col>
+											<Col className="carousel-img-beasiswa">
+												<img
+													className="d-block w-100"
+													src="src/assets/img/person.png"
+													alt="Second slide"
+												/>
+											</Col>
+										</Row>
+									</Container>
+								</SwiperSlide>
 							</Swiper>
 						</div>
 					</Container>
