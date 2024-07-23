@@ -1,0 +1,455 @@
+/* Jumbotron */
+.landing-page {
+	padding-bottom: 40px;
+}
+
+.landing-page section {
+	background: linear-gradient(
+		121deg,
+		var(--primary-color),
+		var(--secondary-color) 60%,
+		#fff 50%
+	);
+}
+
+.jumbotron {
+	font-family: 'Rubik', sans-serif;
+}
+
+.jumbotron h1 {
+	font-size: 2.4rem;
+	font-weight: 600;
+}
+
+.jumbotron-content-wrapper {
+	margin-top: 25px;
+}
+
+.jumbotron-content-wrapper p {
+	font-size: 27px;
+	font-weight: 500;
+	margin-bottom: 0;
+	line-height: 2rem;
+}
+
+.jumbotron-content-wrapper span {
+	font-size: 26px;
+	font-weight: 500;
+	color: var(--tertiary-color);
+}
+
+.gelombang-box {
+	background-color: #4c1d95;
+	max-width: 90%;
+	border-radius: 10px;
+	margin-top: 25px;
+}
+
+.gelombang-wrapper {
+	padding: 10px 20px;
+	line-height: 10px;
+}
+
+.gelombang-content-wrapper p {
+	margin: 0;
+	line-height: 40px;
+	color: #fff;
+}
+
+.gelombang-content-wrapper .gelombang-text {
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.gelombang-content-wrapper .gelombang-date {
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+
+.hero-img-wrapper img {
+	width: 95%;
+	margin-left: 25px;
+	border-radius: 20px;
+	box-shadow: 0 0 15px var(--primary-color);
+}
+
+.jumbotron-button-wrapper {
+	margin-top: 30px;
+}
+
+.jumbotron-button-wrapper .panduan-pmb {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	margin-left: 20px;
+}
+/* End Jumbotron */
+
+/* Jenjang Pendidikan */
+.jenjang-pendidikan .jenjang-pendidikan-header {
+	text-align: center;
+	font-family: 'Archivo', sans-serif;
+	letter-spacing: 10px;
+}
+
+.jenjang-pendidikan .jenjang-pendidikan-header h4 {
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+.jenjang-pendidikan .jenjang-pendidikan-header-detail {
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+}
+
+.jenjang-pendidikan .jenjang-pendidikan-header-detail h2 {
+	font-size: 1.9rem;
+	font-weight: 600;
+}
+
+.carousel-wrapper {
+	margin-top: 50px;
+	cursor: grab;
+}
+
+.carousel-wrapper:active {
+	cursor: grabbing;
+}
+
+.carousel-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.carousel-wrapper .custom-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.carousel-wrapper li {
+	/* display: flex;
+	align-items: center; */
+	margin-bottom: 10px;
+}
+
+.mySwiper {
+	height: 430px;
+}
+
+.mySwiper .swiper-slide {
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+	height: 100%;
+	overflow: hidden;
+}
+
+.mySwiper .swiper-slide img {
+	height: 100%;
+	/* height: auto; */
+}
+
+@keyframes blob {
+	0%,
+	100% {
+		border-radius: 80% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+	50% {
+		border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
+}
+
+.mySwiper .swiper-slide img {
+	width: 100%;
+	height: auto;
+	animation: blob 6s infinite;
+	transition: transform 0.3s ease-in-out;
+	max-height: 500px; /* Atur batas tinggi maksimal gambar */
+	object-fit: cover; /* Agar gambar sesuai dengan ukuran */
+}
+
+/* End Jenjang Pendidikan */
+
+/* Responsive CSS */
+@media screen and (max-width: 992px) {
+	.landing-page section {
+		background: linear-gradient(var(--primary-color), var(--secondary-color));
+	}
+}
+
+@media screen and (max-width: 475px) {
+	/* Jumbotron */
+	.landing-page section .container .jumbotron {
+		margin-top: 100px;
+	}
+
+	.landing-page section .container .jumbotron h1 {
+		font-size: 2.2rem;
+		text-align: center;
+	}
+
+	.landing-page section .container .jumbotron .jumbotron-content-wrapper {
+		text-align: center;
+	}
+
+	.landing-page section .container .jumbotron .jumbotron-content-wrapper p,
+	.landing-page section .container .jumbotron .jumbotron-content-wrapper span {
+		font-size: 1.5rem;
+	}
+
+	.gelombang-box {
+		margin: 25px auto;
+		width: 85%;
+	}
+
+	.gelombang-box .gelombang-wrapper {
+		text-align: center;
+	}
+
+	.gelombang-box .gelombang-wrapper .gelombang-content-wrapper p {
+		font-size: 25px;
+		line-height: 32px;
+	}
+
+	.jumbotron-button-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.jumbotron-button-wrapper .button-daftar {
+		font-size: 15px;
+		margin-bottom: 15px;
+		padding: 15px;
+	}
+
+	.jumbotron-button-wrapper .panduan-pmb {
+		font-size: 15px;
+		display: block;
+		margin-left: 0;
+	}
+
+	.hero-img {
+		padding: 0;
+	}
+
+	.hero-img .hero-img-wrapper img {
+		width: 85%;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		display: flex;
+	}
+	/* End Jumbotron */
+
+	/* Jenjang Pendidikan */
+	.jenjang-pendidikan .jenjang-pendidikan-header h4 {
+		font-size: 1.2rem;
+	}
+
+	.jenjang-pendidikan .jenjang-pendidikan-header-detail h2 {
+		font-size: 1.5rem;
+	}
+
+	.carousel-wrapper {
+		margin-top: 25px;
+	}
+
+	.carousel-wrapper h3 {
+		text-align: center;
+		font-size: 1.3rem;
+	}
+
+	.carousel-wrapper ul li {
+		font-size: 1.1rem;
+	}
+
+	.carousel-img {
+		display: none !important;
+	}
+	/* End Jenjang Pendidikan */
+}
+
+@media (max-width: 375px) {
+	/* Jumbotron */
+	.landing-page section .container .jumbotron {
+		margin-top: 100px;
+	}
+
+	.landing-page section .container .jumbotron h1 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.landing-page section .container .jumbotron .jumbotron-content-wrapper {
+		text-align: center;
+	}
+
+	.landing-page section .container .jumbotron .jumbotron-content-wrapper p,
+	.landing-page section .container .jumbotron .jumbotron-content-wrapper span {
+		font-size: 1.3rem;
+	}
+
+	.gelombang-box {
+		margin: 25px auto;
+		width: 80%;
+	}
+
+	.gelombang-box .gelombang-wrapper {
+		text-align: center;
+	}
+
+	.gelombang-box .gelombang-wrapper .gelombang-content-wrapper p {
+		font-size: 20px;
+		line-height: 32px;
+	}
+
+	.jumbotron-button-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.jumbotron-button-wrapper .button-daftar {
+		font-size: 15px;
+		margin-bottom: 15px;
+		padding: 15px;
+	}
+
+	.jumbotron-button-wrapper .panduan-pmb {
+		font-size: 15px;
+		display: block;
+		margin-left: 0;
+	}
+
+	.hero-img {
+		padding: 0;
+	}
+
+	.hero-img .hero-img-wrapper img {
+		width: 85%;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		display: flex;
+	}
+	/* End Jumbotron */
+
+	/* Jenjang Pendidikan */
+	.jenjang-pendidikan .jenjang-pendidikan-header h4 {
+		font-size: 1.4rem;
+	}
+
+	.jenjang-pendidikan .jenjang-pendidikan-header-detail h2 {
+		font-size: 1.2rem;
+	}
+
+	.carousel-wrapper {
+		margin-top: 25px;
+	}
+
+	.carousel-wrapper h3 {
+		text-align: center;
+		font-size: 1.3rem;
+	}
+
+	.carousel-wrapper ul li {
+		font-size: 1rem;
+	}
+
+	.carousel-img {
+		display: none !important;
+	}
+	/* End Jenjang Pendidikan */
+}
+
+@media (max-width: 320px) {
+	/* Jumbotron */
+	.landing-page section .container .jumbotron {
+		margin-top: 80px;
+	}
+
+	.landing-page section .container .jumbotron h1 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.landing-page section .container .jumbotron .jumbotron-content-wrapper {
+		text-align: center;
+	}
+
+	.landing-page section .container .jumbotron .jumbotron-content-wrapper p,
+	.landing-page section .container .jumbotron .jumbotron-content-wrapper span {
+		font-size: 1.2rem;
+	}
+
+	.gelombang-box {
+		margin: 20px auto;
+	}
+
+	.gelombang-box .gelombang-wrapper {
+		text-align: center;
+	}
+
+	.gelombang-box .gelombang-wrapper .gelombang-content-wrapper p {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.jumbotron-button-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.jumbotron-button-wrapper .button-daftar {
+		font-size: 15px;
+		margin-bottom: 15px;
+		padding: 15px;
+	}
+
+	.jumbotron-button-wrapper .panduan-pmb {
+		font-size: 15px;
+		display: block;
+		margin-left: 0;
+	}
+
+	.hero-img {
+		padding: 0;
+	}
+
+	.hero-img .hero-img-wrapper img {
+		width: 100%;
+		margin-left: 0;
+		margin-bottom: 40px;
+	}
+	/* Jumbotron */
+
+	/* Jenjang Pendidikan */
+	.jenjang-pendidikan .jenjang-pendidikan-header h4 {
+		font-size: 1.4rem;
+	}
+
+	.jenjang-pendidikan .jenjang-pendidikan-header-detail h2 {
+		font-size: 1.1rem;
+	}
+
+	.carousel-wrapper {
+		margin-top: 25px;
+	}
+
+	.carousel-wrapper h3 {
+		text-align: center;
+		font-size: 1.2rem;
+	}
+
+	.carousel-wrapper ul li {
+		text-align: left;
+	}
+
+	.carousel-img {
+		display: none !important;
+	}
+	/* End Jenjang Pendidikan */
+}
+
+/* End Responsive CSS */
