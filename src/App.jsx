@@ -1,8 +1,9 @@
 // router
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 // components
 import NavbarComponent from './components/NavbarComponent';
+import NavbarComponentSecond from './components/NavbarComponentSecond';
 import FooterComponent from './components/FooterComponent';
 
 // pages
@@ -10,9 +11,13 @@ import LandingPage from './pages/LandingPage';
 import BeasiswaKipPage from './pages/beasiswa/BeasiswaKipPage';
 
 function App() {
+	const location = useLocation();
+
+	const isRootPath = location.pathname === '/';
+
 	return (
 		<>
-			<NavbarComponent />
+			{isRootPath ? <NavbarComponent /> : <NavbarComponentSecond />}
 
 			<Routes>
 				<Route path="/" element={<LandingPage />} />

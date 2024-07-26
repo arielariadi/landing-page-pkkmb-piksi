@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useEffect, useRef } from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import { Container, Row, Col, Button, Card, Accordion } from 'react-bootstrap';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -10,6 +10,9 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleDot } from '@fortawesome/free-regular-svg-icons';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import '../styles/landing-page.css';
 
@@ -34,13 +37,28 @@ const LandingPage = () => {
 		}
 	}, []);
 
+	useEffect(() => {
+		AOS.init({
+			disable: function () {
+				var maxWidth = 768;
+				return window.innerWidth < maxWidth;
+			},
+			duration: 1200,
+			easing: 'ease-in-out',
+			once: false,
+			mirror: true,
+			anchorPlacement: 'top-bottom',
+		});
+		AOS.refresh();
+	}, []);
+
 	return (
 		<>
 			<div className="landing-page" id="landingPage">
 				<section className="w-100 min-vh-100 d-flex align-items-center overflow-hidden">
 					<Container>
 						<Row className="jumbotron">
-							<Col lg="6">
+							<Col lg="6" data-aos="fade-right">
 								<h1 className="text-white">Penerimaan Mahasiswa Baru</h1>
 
 								<div className="jumbotron-content-wrapper">
@@ -51,9 +69,9 @@ const LandingPage = () => {
 								<div className="gelombang-box">
 									<div className="gelombang-wrapper">
 										<div className="gelombang-content-wrapper">
-											<p className="gelombang-text">Gelombang ...</p>
+											<p className="gelombang-text">Gelombang 1</p>
 											<p className="gelombang-date">
-												01 Juli 2024 s/d 30 Agustus 2025
+												01 Juli 2024 s/d 30 Agustus 2024
 											</p>
 										</div>
 									</div>
@@ -71,7 +89,7 @@ const LandingPage = () => {
 								</div>
 							</Col>
 
-							<Col lg="6" className="hero-img">
+							<Col lg="6" className="hero-img" data-aos="fade-left">
 								<div className="hero-img-wrapper">
 									<img
 										src="src/assets/img/hero-img.jpeg"
@@ -88,11 +106,13 @@ const LandingPage = () => {
 			<div className="jenjang-pendidikan" id="jenjangPendidikan">
 				<section className="w-100 min-vh-100 d-flex">
 					<Container>
-						<div className="jenjang-pendidikan-header">
+						<div className="jenjang-pendidikan-header" data-aos="fade-up">
 							<h4>JENJANG PENDIDIKAN</h4>
 						</div>
 
-						<div className="jenjang-pendidikan-header-detail">
+						<div
+							className="jenjang-pendidikan-header-detail"
+							data-aos="fade-up">
 							<h2>Membangun Masa Depan dengan Pendidikan Berkualitas</h2>
 						</div>
 
@@ -101,15 +121,15 @@ const LandingPage = () => {
 								spaceBetween={50}
 								slidesPerView={1}
 								pagination={{ clickable: true }}
+								autoplay={{ delay: 3000, disableOnInteraction: false }}
 								modules={[Navigation, Pagination, Autoplay]}
 								ref={swiperRef}
 								className="mySwiper">
 								<SwiperSlide>
 									<Container>
 										<Row>
-											<Col>
+											<Col data-aos="fade-right">
 												<h3>D4 - Sarjana Terapan</h3>
-												{/* <h5>Program Sarjana (S1)</h5> */}
 												<ul className="custom-list">
 													<li>
 														<FontAwesomeIcon
@@ -165,7 +185,9 @@ const LandingPage = () => {
 													</li>
 												</ul>
 											</Col>
-											<Col className="carousel-img-jenjang-pendidikan">
+											<Col
+												className="carousel-img-jenjang-pendidikan"
+												data-aos="fade-left">
 												<img
 													className="d-block w-100"
 													src="src/assets/img/hero-img.jpeg"
@@ -178,9 +200,8 @@ const LandingPage = () => {
 								<SwiperSlide>
 									<Container>
 										<Row>
-											<Col>
+											<Col data-aos="fade-right">
 												<h3>D3 - Diploma</h3>
-												{/* <h5>Program Sarjana (S1)</h5> */}
 												<ul className="custom-list">
 													<li>
 														<FontAwesomeIcon
@@ -235,7 +256,9 @@ const LandingPage = () => {
 													</li>
 												</ul>
 											</Col>
-											<Col className="carousel-img-jenjang-pendidikan">
+											<Col
+												className="carousel-img-jenjang-pendidikan"
+												data-aos="fade-left">
 												<img
 													className="d-block w-100"
 													src="src/assets/img/hero-img.jpeg"
@@ -254,15 +277,17 @@ const LandingPage = () => {
 			<div className="info-pmb" id="infoPmb">
 				<section className="w-100 d-flex">
 					<Container>
-						<div className="info-pmb-header">
+						<div className="info-pmb-header" data-aos="fade-up">
 							<h4>INFO PMB</h4>
 						</div>
 
-						<div className="info-pmb-header-detail">
+						<div className="info-pmb-header-detail" data-aos="fade-up">
 							<h2>Panduan Lengkap Untuk Calon Mahasiswa Baru</h2>
 						</div>
 
-						<div className="info-pmb-wrapper d-flex justify-content-center gap-3">
+						<div
+							className="info-pmb-wrapper d-flex justify-content-center gap-3"
+							data-aos="fade-up">
 							<Card>
 								<Card.Body>
 									<Card.Img
@@ -343,11 +368,11 @@ const LandingPage = () => {
 			<div className="beasiswa" id="beasiswa">
 				<section className="w-100 min-vh-100 d-flex">
 					<Container>
-						<div className="beasiswa-header">
+						<div className="beasiswa-header" data-aos="fade-up">
 							<h4>BEASISWA</h4>
 						</div>
 
-						<div className="beasiswa-header-detail">
+						<div className="beasiswa-header-detail" data-aos="fade-up">
 							<h2>Peluang Emas untuk Meraih Beasiswa</h2>
 						</div>
 						<div className="carousel-wrapper-beasiswa">
@@ -355,13 +380,14 @@ const LandingPage = () => {
 								spaceBetween={50}
 								slidesPerView={1}
 								pagination={{ clickable: true }}
+								autoplay={{ delay: 3000, disableOnInteraction: false }}
 								modules={[Navigation, Pagination, Autoplay]}
 								ref={swiperRef}
 								className="mySwiper">
 								<SwiperSlide>
 									<Container>
 										<Row>
-											<Col>
+											<Col data-aos="fade-right">
 												<h3>
 													Kuliah 100% Gratis Dengan Kartu Indonesia Pintar
 												</h3>
@@ -375,7 +401,9 @@ const LandingPage = () => {
 													consectetur adipisicing elit. Laborum quidem at,
 												</p>
 											</Col>
-											<Col className="carousel-img-beasiswa">
+											<Col
+												className="carousel-img-beasiswa"
+												data-aos="fade-left">
 												<img
 													className="d-block w-100"
 													src="src/assets/img/person.png"
@@ -388,7 +416,7 @@ const LandingPage = () => {
 								<SwiperSlide>
 									<Container>
 										<Row>
-											<Col>
+											<Col data-aos="fade-right">
 												<h3>
 													Kuliah 100% Gratis Dengan Kartu Indonesia Pintar
 												</h3>
@@ -402,7 +430,9 @@ const LandingPage = () => {
 													consectetur adipisicing elit. Laborum quidem at
 												</p>
 											</Col>
-											<Col className="carousel-img-beasiswa">
+											<Col
+												className="carousel-img-beasiswa"
+												data-aos="fade-left">
 												<img
 													className="d-block w-100"
 													src="src/assets/img/person.png"
@@ -414,6 +444,196 @@ const LandingPage = () => {
 								</SwiperSlide>
 							</Swiper>
 						</div>
+					</Container>
+				</section>
+			</div>
+
+			<div className="fasilitas-kampus">
+				<section className="w-100 min-vh-100 d-flex">
+					<Container>
+						<div className="fasilitas-kampus-header" data-aos="fade-up">
+							<h4>FASILITAS KAMPUS</h4>
+						</div>
+
+						<div className="fasilitas-kampus-header-detail" data-aos="fade-up">
+							<h2>Fasilitas Terbaik untuk Kenyamanan Belajar Anda</h2>
+						</div>
+
+						<div
+							className="carousel-wrapper-fasilitas-kampus d-flex justify-content-center"
+							data-aos="fade-up">
+							<Swiper
+								spaceBetween={50}
+								slidesPerView={3}
+								pagination={{ clickable: true }}
+								modules={[Navigation, Pagination, Autoplay]}
+								ref={swiperRef}
+								loop={true}
+								className="mySwiper"
+								breakpoints={{
+									320: {
+										slidesPerView: 1,
+									},
+
+									768: {
+										slidesPerView: 3,
+									},
+								}}>
+								<SwiperSlide>
+									<Card>
+										<Card.Img variant="top" src="src/assets/img/lab.jpeg" />
+										<Card.ImgOverlay className="d-flex justify-content-center">
+											<div className="card-content-wrapper">
+												<Card.Title>Card title</Card.Title>
+												<Card.Text>
+													Some quick example text to build on the card title and
+													make up the bulk of the card's content.
+												</Card.Text>
+											</div>
+										</Card.ImgOverlay>
+									</Card>
+								</SwiperSlide>
+
+								<SwiperSlide>
+									<Card>
+										<Card.Img variant="top" src="src/assets/img/lab.jpeg" />
+										<Card.ImgOverlay className="d-flex justify-content-center">
+											<div className="card-content-wrapper">
+												<Card.Title>Card title</Card.Title>
+												<Card.Text>
+													Some quick example text to build on the card title and
+													make up the bulk of the card's content.
+												</Card.Text>
+											</div>
+										</Card.ImgOverlay>
+									</Card>
+								</SwiperSlide>
+
+								<SwiperSlide>
+									<Card>
+										<Card.Img variant="top" src="src/assets/img/lab.jpeg" />
+										<Card.ImgOverlay className="d-flex justify-content-center">
+											<div className="card-content-wrapper">
+												<Card.Title>Card title</Card.Title>
+												<Card.Text>
+													Some quick example text to build on the card title and
+													make up the bulk of the card's content.
+												</Card.Text>
+											</div>
+										</Card.ImgOverlay>
+									</Card>
+								</SwiperSlide>
+
+								<SwiperSlide>
+									<Card>
+										<Card.Img variant="top" src="src/assets/img/lab.jpeg" />
+										<Card.ImgOverlay className="d-flex justify-content-center">
+											<div className="card-content-wrapper">
+												<Card.Title>Card title</Card.Title>
+												<Card.Text>
+													Some quick example text to build on the card title and
+													make up the bulk of the card's content.
+												</Card.Text>
+											</div>
+										</Card.ImgOverlay>
+									</Card>
+								</SwiperSlide>
+
+								<SwiperSlide>
+									<Card>
+										<Card.Img variant="top" src="src/assets/img/lab.jpeg" />
+										<Card.ImgOverlay className="d-flex justify-content-center">
+											<div className="card-content-wrapper">
+												<Card.Title>Card title</Card.Title>
+												<Card.Text>
+													Some quick example text to build on the card title and
+													make up the bulk of the card's content.
+												</Card.Text>
+											</div>
+										</Card.ImgOverlay>
+									</Card>
+								</SwiperSlide>
+
+								<SwiperSlide>
+									<Card>
+										<Card.Img variant="top" src="src/assets/img/lab.jpeg" />
+										<Card.ImgOverlay className="d-flex justify-content-center">
+											<div className="card-content-wrapper">
+												<Card.Title>Card title</Card.Title>
+												<Card.Text>
+													Some quick example text to build on the card title and
+													make up the bulk of the card's content.
+												</Card.Text>
+											</div>
+										</Card.ImgOverlay>
+									</Card>
+								</SwiperSlide>
+							</Swiper>
+						</div>
+					</Container>
+				</section>
+			</div>
+
+			<div className="faq" id="faq">
+				<section className="w-100 d-flex overflow-hidden">
+					<Container>
+						<div className="faq-header">
+							<h4>FAQ</h4>
+						</div>
+
+						<div className="faq-header-detail">
+							<h2>Pertanyaan Umum dan Jawabannya</h2>
+						</div>
+
+						<Accordion data-aos="fade-up">
+							<Accordion.Item eventKey="0">
+								<Accordion.Header>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit?
+								</Accordion.Header>
+								<Accordion.Body>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Laborum necessitatibus aliquam deserunt quia, alias explicabo
+									non aspernatur impedit eveniet expedita totam exercitationem?
+									Dolore non repellat odio? Modi dolor rerum necessitatibus.
+								</Accordion.Body>
+							</Accordion.Item>
+
+							<Accordion.Item eventKey="1">
+								<Accordion.Header>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit?
+								</Accordion.Header>
+								<Accordion.Body>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Laborum necessitatibus aliquam deserunt quia, alias explicabo
+									non aspernatur impedit eveniet expedita totam exercitationem?
+									Dolore non repellat odio? Modi dolor rerum necessitatibus.
+								</Accordion.Body>
+							</Accordion.Item>
+
+							<Accordion.Item eventKey="2">
+								<Accordion.Header>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit?
+								</Accordion.Header>
+								<Accordion.Body>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Laborum necessitatibus aliquam deserunt quia, alias explicabo
+									non aspernatur impedit eveniet expedita totam exercitationem?
+									Dolore non repellat odio? Modi dolor rerum necessitatibus.
+								</Accordion.Body>
+							</Accordion.Item>
+
+							<Accordion.Item eventKey="3">
+								<Accordion.Header>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit?
+								</Accordion.Header>
+								<Accordion.Body>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Laborum necessitatibus aliquam deserunt quia, alias explicabo
+									non aspernatur impedit eveniet expedita totam exercitationem?
+									Dolore non repellat odio? Modi dolor rerum necessitatibus.
+								</Accordion.Body>
+							</Accordion.Item>
+						</Accordion>
 					</Container>
 				</section>
 			</div>

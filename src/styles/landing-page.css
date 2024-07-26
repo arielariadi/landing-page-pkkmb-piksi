@@ -111,6 +111,7 @@
 .jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan {
 	margin-top: 50px;
 	cursor: grab;
+	font-family: 'Rubik', sans-serif;
 }
 
 .jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan:active {
@@ -200,6 +201,7 @@
 
 .info-pmb .info-pmb-wrapper {
 	margin-top: 40px;
+	font-family: 'Rubik', sans-serif;
 }
 
 .info-pmb .info-pmb-wrapper .card {
@@ -213,7 +215,7 @@
 
 /* Beasiswa */
 .beasiswa {
-	margin: 40px;
+	margin-top: 40px;
 }
 
 .beasiswa .beasiswa-header {
@@ -241,6 +243,7 @@
 .beasiswa .carousel-wrapper-beasiswa {
 	margin-top: 50px;
 	cursor: grab;
+	font-family: 'Rubik', sans-serif;
 }
 
 .beasiswa .carousel-wrapper-beasiswa:active {
@@ -273,8 +276,127 @@
 .beasiswa .mySwiper .swiper-slide img {
 	height: 100%;
 }
-
 /* End Beasiswa */
+
+/* Fasilitas Kampus */
+.fasilitas-kampus .fasilitas-kampus-header {
+	text-align: center;
+	font-family: 'Archivo', sans-serif;
+	letter-spacing: 10px;
+}
+
+.fasilitas-kampus .fasilitas-kampus-header h4 {
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+.fasilitas-kampus .fasilitas-kampus-header-detail {
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+}
+
+.fasilitas-kampus .fasilitas-kampus-header-detail h2 {
+	font-size: 1.9rem;
+	font-weight: 600;
+}
+
+.fasilitas-kampus .carousel-wrapper-fasilitas-kampus {
+	cursor: grab;
+	margin-top: 50px;
+	font-family: 'Rubik', sans-serif;
+}
+
+.fasilitas-kampus .carousel-wrapper-fasilitas-kampus:active {
+	cursor: grabbing;
+}
+
+.fasilitas-kampus .carousel-wrapper-fasilitas-kampus .mySwiper {
+	height: 510px;
+}
+
+.fasilitas-kampus .carousel-wrapper-fasilitas-kampus .swiper-pagination {
+	display: none;
+}
+
+.fasilitas-kampus .carousel-wrapper-fasilitas-kampus .card {
+	position: relative;
+	height: 100%;
+	border-radius: 20px;
+}
+
+.fasilitas-kampus .carousel-wrapper-fasilitas-kampus .card .card-img-overlay {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 20px;
+}
+
+.fasilitas-kampus .carousel-wrapper-fasilitas-kampus .card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+.fasilitas-kampus
+	.carousel-wrapper-fasilitas-kampus
+	.card
+	.card-img-overlay
+	.card-content-wrapper {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 25px;
+}
+/* End Fasilitas Kampus */
+
+/* FAQ */
+.faq {
+	margin-top: 70px;
+}
+
+.faq .faq-header {
+	text-align: center;
+	font-family: 'Archivo', sans-serif;
+	letter-spacing: 10px;
+}
+
+.faq .faq-header h4 {
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+.faq .faq-header-detail {
+	text-align: center;
+	font-family: 'Rubik', sans-serif;
+}
+
+.faq .accordion {
+	margin-top: 30px;
+}
+
+.faq .accordion-header button {
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.faq .accordion-body {
+	font-family: 'Rubik', sans-serif;
+	text-align: justify;
+}
+
+.faq .accordion-button:focus {
+	box-shadow: none;
+}
+
+.faq .accordion-button:not(.collapsed) {
+	color: black;
+	background: linear-gradient(var(--primary-color), var(--secondary-color));
+}
+/* End FAQ */
 
 /******* Responsive CSS *******/
 @media screen and (max-width: 992px) {
@@ -370,8 +492,12 @@
 		font-size: 1rem;
 	}
 
-	.jenjang-pendidikan .carousel-img-jenjang-pendidikan {
-		display: none !important;
+	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan .row {
+		flex-direction: column;
+	}
+
+	.jenjang-pendidikan .mySwiper {
+		height: 650px;
 	}
 	/* End Jenjang Pendidikan */
 
@@ -443,10 +569,35 @@
 		text-align: left;
 	}
 
-	.beasiswa .carousel-img-beasiswa {
-		display: none !important;
+	.beasiswa .carousel-wrapper-beasiswa .row {
+		flex-direction: column;
+	}
+
+	.beasiswa .mySwiper {
+		height: 550px;
 	}
 	/* End Beasiswa */
+
+	/* Fasilitas Kampus */
+	.fasilitas-kampus {
+		margin-top: 40px;
+	}
+
+	.fasilitas-kampus .fasilitas-kampus-header h4 {
+		font-size: 20px;
+		letter-spacing: 6px;
+	}
+
+	.fasilitas-kampus .fasilitas-kampus-header-detail h2 {
+		font-size: 20px;
+	}
+
+	.fasilitas-kampus .carousel-wrapper-fasilitas-kampus .card {
+		margin: 0 auto;
+		height: 80%;
+	}
+
+	/* End Fasilitas Kampus */
 }
 
 @media (max-width: 375px) {
@@ -536,9 +687,10 @@
 		font-size: 1rem;
 	}
 
-	.jenjang-pendidikan .carousel-img-jenjang-pendidikan {
-		display: none !important;
+	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan .row {
+		flex-direction: column;
 	}
+
 	/* End Jenjang Pendidikan */
 
 	/* Info PMB */
@@ -609,8 +761,8 @@
 		text-align: left;
 	}
 
-	.beasiswa .carousel-img-beasiswa {
-		display: none !important;
+	.beasiswa .carousel-wrapper-beasiswa .row {
+		flex-direction: column;
 	}
 	/* End Beasiswa */
 }
@@ -700,8 +852,8 @@
 		text-align: left;
 	}
 
-	.jenjang-pendidikan .carousel-img-jenjang-pendidikan {
-		display: none !important;
+	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan .row {
+		flex-direction: column;
 	}
 	/* End Jenjang Pendidikan */
 
@@ -778,14 +930,26 @@
 		margin-top: 10px;
 	}
 
-	.beasiswa .carousel-wrapper ul li {
+	.beasiswa .carousel-wrapper-beasiswa ul li {
 		text-align: left;
 	}
 
-	.beasiswa .carousel-img-beasiswa {
-		display: none !important;
+	.beasiswa .carousel-wrapper-beasiswa .row {
+		flex-direction: column;
 	}
 	/* End Beasiswa */
+
+	/* Fasilitas Kampus */
+	.fasilitas-kampus .fasilitas-kampus-header h4 {
+		font-size: 18px;
+		letter-spacing: 7px;
+	}
+
+	.fasilitas-kampus .fasilitas-kampus-header-detail h2 {
+		font-size: 18px;
+	}
+
+	/* End Fasilitas Kampus */
 }
 
 /******* End Responsive CSS *******/
