@@ -1,0 +1,41 @@
+.beasiswa-pemkot-cilegon {
+	margin-top: 100px;
+	font-family: 'Rubik', sans-serif;
+}
+
+.beasiswa-pemkot-cilegon .beasiswa-pemkot-cilegon-content {
+	text-align: justify;
+}
+
+.beasiswa-pemkot-cilegon .header-box {
+	background-color: var(--primary-color);
+	width: 25%;
+	border-radius: 5px;
+	padding: 10px;
+	position: relative;
+}
+
+.beasiswa-pemkot-cilegon .header-box h3 {
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1.5rem;
+}
+
+@media screen and (max-width: 475px) {
+	.beasiswa-pemkot-cilegon {
+		margin-top: 120px;
+	}
+
+	.beasiswa-pemkot-cilegon .beasiswa-pemkot-cilegon-header h1 {
+		font-size: 1.7rem;
+	}
+
+	.beasiswa-pemkot-cilegon .header-box {
+		width: 47%;
+	}
+
+	.beasiswa-pemkot-cilegon .header-box h3 {
+		font-size: 1rem;
+	}
+}

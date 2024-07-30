@@ -1,22 +1,22 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
-import '../../styles/beasiswa-style/beasiswa-kip-page.css';
+import '../../styles/beasiswa-style/beasiswa-peduli-banten-page.css';
 
-const BeasiswaKipPage = () => {
+const BeasiswaPeduliBantenPage = () => {
 	return (
 		<>
-			<div className="beasiswa-kip" id="beasiswaKip">
+			<div className="beasiswa-peduli-banten" id="beasiswaPeduliBanten">
 				<section className="w-100">
 					<Container>
 						<Row>
 							<Col lg="12">
-								<div className="beasiswa-kip-header">
+								<div className="beasiswa-peduli-banten-header">
 									<h1 className="text-center">
-										Beasiswa Kartu Indonesia Pintar (KIP)
+										Beasiswa Peduli Banten (Yayasan)
 									</h1>
 								</div>
 
-								<div className="beasiswa-kip-content">
+								<div className="beasiswa-peduli-banten-content">
 									<p>
 										Beasiswa KIP Kuliah merupakan beasiswa dari Kementrian
 										Pendidikan dan Kebudayaan yang diberikan kepada calon
@@ -202,4 +202,4 @@ const BeasiswaKipPage = () => {
 	);
 };
 
-export default BeasiswaKipPage;
+export default BeasiswaPeduliBantenPage;

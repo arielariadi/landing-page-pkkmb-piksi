@@ -12,11 +12,22 @@ const FooterComponent = () => {
 							<h3>Menu</h3>
 							<ul>
 								<li>
-									<a href="/">Beranda</a>
+									<a href="#landingPage">Beranda</a>
 								</li>
-
 								<li>
-									<a href="/">Jenjang Pendidikan</a>
+									<a href="#jenjangPendidikan">Pilihan Program Studi</a>
+								</li>
+								<li>
+									<a href="#infoPmb">Info PMB</a>
+								</li>
+								<li>
+									<a href="#beasiswa">Info PMB</a>
+								</li>
+								<li>
+									<a href="#fasilitasKampus">Fasilitas Kampus</a>
+								</li>
+								<li>
+									<a href="#faq">FAQ</a>
 								</li>
 							</ul>
 						</div>

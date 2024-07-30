@@ -20,13 +20,22 @@
 	color: white;
 }
 
+.navbar-nav .nav-link:hover {
+	color: var(--tertiary-color);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+	color: var(--tertiary-color) !important;
+}
+
 .navbar-right {
 	display: flex;
 	align-items: center;
 }
 
 .navbar-scrolled {
-	background: linear-gradient(#6736b6, #8e53e7);
+	background: linear-gradient(#084d88, #2b6394);
 	transition: background-color 0.3s;
 }
 

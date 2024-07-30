@@ -1,0 +1,41 @@
+.beasiswa-kip {
+	margin-top: 100px;
+	font-family: 'Rubik', sans-serif;
+}
+
+.beasiswa-kip .beasiswa-kip-content {
+	text-align: justify;
+}
+
+.beasiswa-kip .header-box {
+	background-color: var(--primary-color);
+	width: 25%;
+	border-radius: 5px;
+	padding: 10px;
+	position: relative;
+}
+
+.beasiswa-kip .header-box h3 {
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1.5rem;
+}
+
+@media screen and (max-width: 475px) {
+	.beasiswa-kip {
+		margin-top: 120px;
+	}
+
+	.beasiswa-kip .beasiswa-kip-header h1 {
+		font-size: 1.7rem;
+	}
+
+	.beasiswa-kip .header-box {
+		width: 47%;
+	}
+
+	.beasiswa-kip .header-box h3 {
+		font-size: 1rem;
+	}
+}

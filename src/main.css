@@ -3,7 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-	--primary-color: #602aaf;
-	--secondary-color: #6d28d9;
+	--primary-color: #084d88;
+	--secondary-color: #233051;
 	--tertiary-color: #ec9410;
+}
+
+html {
+	scroll-behavior: smooth;
 }

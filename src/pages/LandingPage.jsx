@@ -63,13 +63,13 @@ const LandingPage = () => {
 
 								<div className="jumbotron-content-wrapper">
 									<p className="text-white">Politeknik Piksi Input Serang</p>
-									<span>"Lorem ipsum, dolor sit amet"</span>
+									<span>"Kampus Vokasi Berbasis Teknologi Informasi"</span>
 								</div>
 
 								<div className="gelombang-box">
 									<div className="gelombang-wrapper">
 										<div className="gelombang-content-wrapper">
-											<p className="gelombang-text">Gelombang 1</p>
+											<p className="gelombang-text">Gelombang 4</p>
 											<p className="gelombang-date">
 												01 Juli 2024 s/d 30 Agustus 2024
 											</p>
@@ -78,9 +78,11 @@ const LandingPage = () => {
 								</div>
 
 								<div className="jumbotron-button-wrapper">
-									<Button className="button-daftar me-2" href="/">
-										Daftar Sekarang
-									</Button>
+									<a href="https://piksiinputserang.ac.id/pmb-v2/register">
+										<Button className="button-daftar me-2">
+											Daftar Sekarang
+										</Button>
+									</a>
 									<a href="/" className="panduan-pmb">
 										<p>
 											Panduan PMB <i className="bi bi-arrow-right"></i>
@@ -92,7 +94,7 @@ const LandingPage = () => {
 							<Col lg="6" className="hero-img" data-aos="fade-left">
 								<div className="hero-img-wrapper">
 									<img
-										src="src/assets/img/hero-img.jpeg"
+										src="/img/hero-img.jpeg"
 										alt="Landing Page"
 										className="img-fluid"
 									/>
@@ -107,7 +109,7 @@ const LandingPage = () => {
 				<section className="w-100 min-vh-100 d-flex">
 					<Container>
 						<div className="jenjang-pendidikan-header" data-aos="fade-up">
-							<h4>JENJANG PENDIDIKAN</h4>
+							<h4>PILIHAN PROGRAM STUDI</h4>
 						</div>
 
 						<div
@@ -136,51 +138,32 @@ const LandingPage = () => {
 															icon={faCircleDot}
 															style={{ color: 'green', marginRight: '8px' }}
 														/>
+														D4-Rekayasa Keamanan Siber
+														<span>
+															(Penetration Tester, Network Security
+															Administrator, Secure Software Developer)
+														</span>
+													</li>
+													<li>
+														<FontAwesomeIcon
+															icon={faCircleDot}
+															style={{ color: 'green', marginRight: '8px' }}
+														/>
+														D4-Bisnis Digital
+														<span>
+															(Business Service Analyst, Business Analyst,
+															Digital Enterpreneur)
+														</span>
+													</li>
+													<li>
+														<FontAwesomeIcon
+															icon={faCircleDot}
+															style={{ color: 'green', marginRight: '8px' }}
+														/>
 														D4-Akuntansi Perpajakan{' '}
 														<span>
-															(Digital Architecture, Cinema Architecture,
-															Entrepreneur in Architecture)
-														</span>
-													</li>
-													<li>
-														<FontAwesomeIcon
-															icon={faCircleDot}
-															style={{ color: 'green', marginRight: '8px' }}
-														/>
-														S1-Perencanaan Wilayah & Kota{' '}
-														<span>
-															(Digital Urban Planning, Smart City & Creative
-															City)
-														</span>
-													</li>
-													<li>
-														<FontAwesomeIcon
-															icon={faCircleDot}
-															style={{ color: 'green', marginRight: '8px' }}
-														/>
-														S21-Geografi{' '}
-														<span>
-															(Digital Geography, GIS & Documentary Film)
-														</span>
-													</li>
-													<li>
-														<FontAwesomeIcon
-															icon={faCircleDot}
-															style={{ color: 'green', marginRight: '8px' }}
-														/>
-														S21-Geografi{' '}
-														<span>
-															(Digital Geography, GIS & Documentary Film)
-														</span>
-													</li>
-													<li>
-														<FontAwesomeIcon
-															icon={faCircleDot}
-															style={{ color: 'green', marginRight: '8px' }}
-														/>
-														S21-Geografi{' '}
-														<span>
-															(Digital Geography, GIS & Documentary Film)
+															(Staff Akuntansi/Perpajakan, Auditor, Konsultan
+															Akuntasi & Perpajakan, Akuntan Publik)
 														</span>
 													</li>
 												</ul>
@@ -190,7 +173,7 @@ const LandingPage = () => {
 												data-aos="fade-left">
 												<img
 													className="d-block w-100"
-													src="src/assets/img/hero-img.jpeg"
+													src="/img/sarjana-terapan.jpeg"
 													alt="First slide"
 												/>
 											</Col>
@@ -201,16 +184,18 @@ const LandingPage = () => {
 									<Container>
 										<Row>
 											<Col data-aos="fade-right">
-												<h3>D3 - Diploma</h3>
+												<h3>D3 - Diploma 3</h3>
 												<ul className="custom-list">
 													<li>
 														<FontAwesomeIcon
 															icon={faCircleDot}
 															style={{ color: 'green', marginRight: '8px' }}
 														/>
-														S1-Teknik Informatika{' '}
+														D3-Manajemen Informatika
 														<span>
-															(Software Engineering, Data Science, AI)
+															(Keahlian Pemrogramam Berbasis Objek, Pemrograman
+															Berbasis Web, Database Administration, Teknis
+															Jaringan)
 														</span>
 													</li>
 													<li>
@@ -218,10 +203,10 @@ const LandingPage = () => {
 															icon={faCircleDot}
 															style={{ color: 'green', marginRight: '8px' }}
 														/>
-														S1-Teknik Sipil{' '}
+														D3-Akuntansi
 														<span>
-															(Structural Engineering, Transportation
-															Engineering)
+															(Accounting Officer, Junior Auditor, Tax Officer,
+															Accounting Information System, Finance Officer)
 														</span>
 													</li>
 													<li>
@@ -229,39 +214,21 @@ const LandingPage = () => {
 															icon={faCircleDot}
 															style={{ color: 'green', marginRight: '8px' }}
 														/>
-														S1-Teknik Elektro{' '}
+														D3-Sekretari
 														<span>
-															(Power Systems, Telecommunications, Robotics)
-														</span>
-													</li>
-													<li>
-														<FontAwesomeIcon
-															icon={faCircleDot}
-															style={{ color: 'green', marginRight: '8px' }}
-														/>
-														S21-Geografi{' '}
-														<span>
-															(Digital Geography, GIS & Documentary Film)
-														</span>
-													</li>
-													<li>
-														<FontAwesomeIcon
-															icon={faCircleDot}
-															style={{ color: 'green', marginRight: '8px' }}
-														/>
-														S21-Geografi{' '}
-														<span>
-															(Digital Geography, GIS & Documentary Film)
+															(General Affair, Sekretaris Eksekutif, Public
+															Relations, Entrepreneur)
 														</span>
 													</li>
 												</ul>
 											</Col>
+
 											<Col
 												className="carousel-img-jenjang-pendidikan"
 												data-aos="fade-left">
 												<img
 													className="d-block w-100"
-													src="src/assets/img/hero-img.jpeg"
+													src="/img/diploma-tiga.jpeg"
 													alt="Second slide"
 												/>
 											</Col>
@@ -292,17 +259,21 @@ const LandingPage = () => {
 								<Card.Body>
 									<Card.Img
 										variant="top"
-										src="src/assets/img/registration-icon.png"
+										src="/img/alur-pendaftaran-icon.png"
 										className="d-flex mx-auto"
 									/>
 
-									<Card.Title className="text-center mt-4">Konten 1</Card.Title>
+									<Card.Title className="text-center mt-4">
+										Alur Pendaftaran
+									</Card.Title>
 
 									<Card.Text className="text-center mt-3">
-										Lorem ipsum dolor sit amet consectetur adipisicing elit.
-										Velit in consequuntur, vel enim cumque error id, eaque
-										explicabo optio dolorum nihil doloribus! Consequuntur,
+										Proses pendaftaran mahasiswa baru di kampus kami terdiri
+										dari beberapa langkah penting yang harus diikuti oleh calon
+										mahasiswa
 									</Card.Text>
+
+									<Button>Detail</Button>
 								</Card.Body>
 							</Card>
 
@@ -310,18 +281,21 @@ const LandingPage = () => {
 								<Card.Body>
 									<Card.Img
 										variant="top"
-										src="src/assets/img/registration-icon.png"
+										src="/img/biaya-kuliah-icon.png"
 										className="d-flex mx-auto"
 									/>
 
-									<Card.Title className="text-center mt-4">Konten 2</Card.Title>
+									<Card.Title className="text-center mt-4">
+										Biaya Kuliah
+									</Card.Title>
 
 									<Card.Text className="text-center mt-3">
-										Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-										Aperiam, expedita? Assumenda a dolorem totam repellendus
-										laudantium nihil cupiditate accusantium temporibus, omnis
-										vitae
+										Biaya kuliah mencakup berbagai kebutuhan pendidikan,
+										termasuk biaya perkuliahan, fasilitas, dan layanan mahasiswa
 									</Card.Text>
+									<a href="">
+										<Button>Detail</Button>
+									</a>
 								</Card.Body>
 							</Card>
 
@@ -329,17 +303,21 @@ const LandingPage = () => {
 								<Card.Body>
 									<Card.Img
 										variant="top"
-										src="src/assets/img/registration-icon.png"
+										src="/img/beasiswa-icon.png"
 										className="d-flex mx-auto"
 									/>
 
-									<Card.Title className="text-center mt-4">Konten 3</Card.Title>
+									<Card.Title className="text-center mt-4">Beasiswa</Card.Title>
 
 									<Card.Text className="text-center mt-3">
-										Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et
-										similique suscipit, rerum iusto qui veniam doloremque iure
-										expedita a, pariatur maxime culpa ver
+										Politeknik Piksi Input Serang menyediakan berbagai beasiswa
+										seperti beasiswa KIP Kuliah, Pemkot Cilegon, Peduli Banten
+										(Yayasan)
 									</Card.Text>
+
+									<a href="#beasiswa">
+										<Button>Detail</Button>
+									</a>
 								</Card.Body>
 							</Card>
 
@@ -347,17 +325,21 @@ const LandingPage = () => {
 								<Card.Body>
 									<Card.Img
 										variant="top"
-										src="src/assets/img/registration-icon.png"
+										src="/img/hasil-kelulusan-icon.png"
 										className="d-flex mx-auto"
 									/>
 
-									<Card.Title className="text-center mt-4">Konten 4</Card.Title>
+									<Card.Title className="text-center mt-4">
+										Hasil Kelulusan
+									</Card.Title>
 
 									<Card.Text className="text-center mt-3">
-										Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
-										sequi ad molestias dolore, nemo voluptatibus itaque corrupti
-										totam, commodi quae omnis. Neque
+										Informasi bagi para pendaftar yang telah diterima menjadi
+										mahasiswa baru Politeknik Piksi Input Serang dapat dilihat
+										pada halaman berikut
 									</Card.Text>
+
+									<Button>Detail</Button>
 								</Card.Body>
 							</Card>
 						</div>
@@ -388,25 +370,28 @@ const LandingPage = () => {
 									<Container>
 										<Row>
 											<Col data-aos="fade-right">
-												<h3>
-													Kuliah 100% Gratis Dengan Kartu Indonesia Pintar
-												</h3>
-												{/* <h5>Program Sarjana (S1)</h5> */}
+												<h3>Beasiswa Kartu Indonesia Pintar (KIP Kuliah)</h3>
+
 												<p>
-													Lorem ipsum dolor sit, amet consectetur adipisicing
-													elit. Saepe delectus sint minima minus voluptate
-													suscipit a fugiat quam dolorem, deleniti, recusandae
-													repellat, dolore illum. Veritatis necessitatibus sunt
-													deleniti rem nulla! Lorem ipsum dolor sit amet,
-													consectetur adipisicing elit. Laborum quidem at,
+													Kartu Indonesia Pintar Kuliah (KIP Kuliah) adalah
+													program bantuan pendidikan dari pemerintah untuk
+													mahasiswa dari keluarga kurang mampu yang ingin
+													melanjutkan kuliah ke perguruan tinggi negeri (PTN)
+													atau perguruan tinggi swasta (PTS). Bantuan ini
+													diberikan dalam bentuk uang tunai, perluasan akses,
+													dan kesempatan belajar
 												</p>
+
+												<a href="/beasiswa-kip">
+													<Button>Info Lebih Lanjut</Button>
+												</a>
 											</Col>
 											<Col
 												className="carousel-img-beasiswa"
 												data-aos="fade-left">
 												<img
 													className="d-block w-100"
-													src="src/assets/img/person.png"
+													src="/img/person.png"
 													alt="First slide"
 												/>
 											</Col>
@@ -417,25 +402,60 @@ const LandingPage = () => {
 									<Container>
 										<Row>
 											<Col data-aos="fade-right">
-												<h3>
-													Kuliah 100% Gratis Dengan Kartu Indonesia Pintar
-												</h3>
+												<h3>Beasiswa Pemkot Cilegon (KCS)</h3>
 
 												<p>
-													Lorem ipsum dolor sit, amet consectetur adipisicing
-													elit. Saepe delectus sint minima minus voluptate
-													suscipit a fugiat quam dolorem, deleniti, recusandae
-													repellat, dolore illum. Veritatis necessitatibus sunt
-													deleniti rem nulla! Lorem ipsum dolor sit amet,
-													consectetur adipisicing elit. Laborum quidem at
+													Kebijakan beasiswa full sarjana yang diimplementasikan
+													melalui program Kartu Cilegon Sejahtera (KCS) ini
+													menargetkan pemberian 1.000 beasiswa full sarjana per
+													tahun. Sehingga hingga 2025 ditargetkan bisa diberikan
+													5.000 beasiswa full sarjana untuk mahasiswa asal Kota
+													Cilegon. Mahasiswa yang mendapat beasiswa ini akan
+													menerima bantuan Rp3.000.000 per semester. Tiap
+													mahasiswa akan mendapat bantuan selama 8 semester yang
+													berlaku di Perguruan Tinggi di seluruh Indonesia
 												</p>
+
+												<a href="/beasiswa-pemkot-cilegon">
+													<Button>Info Lebih Lanjut</Button>
+												</a>
 											</Col>
 											<Col
 												className="carousel-img-beasiswa"
 												data-aos="fade-left">
 												<img
 													className="d-block w-100"
-													src="src/assets/img/person.png"
+													src="/img/person.png"
+													alt="Second slide"
+												/>
+											</Col>
+										</Row>
+									</Container>
+								</SwiperSlide>
+
+								<SwiperSlide>
+									<Container>
+										<Row>
+											<Col data-aos="fade-right">
+												<h3>Beasiswa Peduli Banten (Yayasan)</h3>
+
+												<p>
+													Beasiswa Peduli Banten adalah Beasiswa yang diberikan
+													oleh Yayasan Piksi Input Serang Banten untuk lulusan
+													SMA/SMK/MA/Sederajat dari Banten yang berasal dari
+													keluarga kurang mampu ke jenjang Diploma Tiga (D3)
+												</p>
+
+												<a href="/beasiswa-peduli-banten">
+													<Button>Info Lebih Lanjut</Button>
+												</a>
+											</Col>
+											<Col
+												className="carousel-img-beasiswa"
+												data-aos="fade-left">
+												<img
+													className="d-block w-100"
+													src="/img/person.png"
 													alt="Second slide"
 												/>
 											</Col>
@@ -481,14 +501,12 @@ const LandingPage = () => {
 								}}>
 								<SwiperSlide>
 									<Card>
-										<Card.Img variant="top" src="src/assets/img/lab.jpeg" />
+										<Card.Img variant="top" src="/img/lab-pemrograman.jpeg" />
 										<Card.ImgOverlay className="d-flex justify-content-center">
 											<div className="card-content-wrapper">
-												<Card.Title>Card title</Card.Title>
-												<Card.Text>
-													Some quick example text to build on the card title and
-													make up the bulk of the card's content.
-												</Card.Text>
+												<div className="box-card-header">
+													<Card.Title>Lab Pemrograman</Card.Title>
+												</div>
 											</div>
 										</Card.ImgOverlay>
 									</Card>
@@ -496,14 +514,12 @@ const LandingPage = () => {
 
 								<SwiperSlide>
 									<Card>
-										<Card.Img variant="top" src="src/assets/img/lab.jpeg" />
+										<Card.Img variant="top" src="/img/gedung-kampus.jpg" />
 										<Card.ImgOverlay className="d-flex justify-content-center">
 											<div className="card-content-wrapper">
-												<Card.Title>Card title</Card.Title>
-												<Card.Text>
-													Some quick example text to build on the card title and
-													make up the bulk of the card's content.
-												</Card.Text>
+												<div className="box-card-header">
+													<Card.Title>Gedung Kampus</Card.Title>
+												</div>
 											</div>
 										</Card.ImgOverlay>
 									</Card>
@@ -511,14 +527,12 @@ const LandingPage = () => {
 
 								<SwiperSlide>
 									<Card>
-										<Card.Img variant="top" src="src/assets/img/lab.jpeg" />
+										<Card.Img variant="top" src="/img/aula.jpg" />
 										<Card.ImgOverlay className="d-flex justify-content-center">
 											<div className="card-content-wrapper">
-												<Card.Title>Card title</Card.Title>
-												<Card.Text>
-													Some quick example text to build on the card title and
-													make up the bulk of the card's content.
-												</Card.Text>
+												<div className="box-card-header">
+													<Card.Title>Aula</Card.Title>
+												</div>
 											</div>
 										</Card.ImgOverlay>
 									</Card>
@@ -526,14 +540,12 @@ const LandingPage = () => {
 
 								<SwiperSlide>
 									<Card>
-										<Card.Img variant="top" src="src/assets/img/lab.jpeg" />
+										<Card.Img variant="top" src="/img/perpustakaan.jpg" />
 										<Card.ImgOverlay className="d-flex justify-content-center">
 											<div className="card-content-wrapper">
-												<Card.Title>Card title</Card.Title>
-												<Card.Text>
-													Some quick example text to build on the card title and
-													make up the bulk of the card's content.
-												</Card.Text>
+												<div className="box-card-header">
+													<Card.Title>Perpustakaan</Card.Title>
+												</div>
 											</div>
 										</Card.ImgOverlay>
 									</Card>
@@ -541,14 +553,12 @@ const LandingPage = () => {
 
 								<SwiperSlide>
 									<Card>
-										<Card.Img variant="top" src="src/assets/img/lab.jpeg" />
+										<Card.Img variant="top" src="/img/ruang-kelas.jpg" />
 										<Card.ImgOverlay className="d-flex justify-content-center">
 											<div className="card-content-wrapper">
-												<Card.Title>Card title</Card.Title>
-												<Card.Text>
-													Some quick example text to build on the card title and
-													make up the bulk of the card's content.
-												</Card.Text>
+												<div className="box-card-header">
+													<Card.Title>Ruang Kelas</Card.Title>
+												</div>
 											</div>
 										</Card.ImgOverlay>
 									</Card>
@@ -556,14 +566,12 @@ const LandingPage = () => {
 
 								<SwiperSlide>
 									<Card>
-										<Card.Img variant="top" src="src/assets/img/lab.jpeg" />
+										<Card.Img variant="top" src="/img/mushola.jpg" />
 										<Card.ImgOverlay className="d-flex justify-content-center">
 											<div className="card-content-wrapper">
-												<Card.Title>Card title</Card.Title>
-												<Card.Text>
-													Some quick example text to build on the card title and
-													make up the bulk of the card's content.
-												</Card.Text>
+												<div className="box-card-header">
+													<Card.Title>Mushola</Card.Title>
+												</div>
 											</div>
 										</Card.ImgOverlay>
 									</Card>

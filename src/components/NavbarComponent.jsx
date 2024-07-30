@@ -28,11 +28,7 @@ const NavbarComponent = () => {
 			<Container>
 				<div className="navbar-left d-flex align-items-center">
 					<Navbar.Brand href="/">
-						<img
-							src="src/assets/img/logo-piksi.png"
-							alt="Logo"
-							className="logo"
-						/>
+						<img src="/img/logo-piksi.png" alt="Logo" className="logo" />
 					</Navbar.Brand>
 					<h2 className="d-flex align-items-center m-0 text-white">
 						PMB 2024/2025
@@ -45,56 +41,49 @@ const NavbarComponent = () => {
 						<Nav.Link href="/">Beranda</Nav.Link>
 						<NavDropdown title="Beasiswa" id="basic-nav-dropdown">
 							<NavDropdown.Item href="/beasiswa-kip">
-								Kartu Indonesia Pinta (KIP)
+								Kartu Indonesia Pintar (KIP)
 							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.2">
-								Another action
+							<NavDropdown.Item href="/beasiswa-pemkot-cilegon">
+								Pemkot Cilegon (KCS)
 							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-							<NavDropdown.Divider />
-							<NavDropdown.Item href="#action/3.4">
-								Separated link
+							<NavDropdown.Item href="/beasiswa-peduli-banten">
+								Peduli Banten (Yayasan)
 							</NavDropdown.Item>
 						</NavDropdown>
 						<NavDropdown title="Informasi" id="basic-nav-dropdown">
-							<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.2">
-								Another action
+							<NavDropdown.Item href="/biaya-kuliah">
+								Biaya Kuliah
 							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-							<NavDropdown.Divider />
-							<NavDropdown.Item href="#action/3.4">
-								Separated link
+							<NavDropdown.Item href="/pemberkasan">
+								Pemberkasan
 							</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.3">Fasilitas</NavDropdown.Item>
+
+							<NavDropdown.Item href="#action/3.4">Brosur</NavDropdown.Item>
 						</NavDropdown>
 						<NavDropdown title="Kegiatan" id="basic-nav-dropdown">
-							<NavDropdown.Item href="#action/3.1">Actionnn</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.2">
-								Another action
-							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-							<NavDropdown.Divider />
-							<NavDropdown.Item href="#action/3.4">
-								Separated link
-							</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.1">PPM</NavDropdown.Item>
 						</NavDropdown>
-						<NavDropdown title="Kegiatan" id="basic-nav-dropdown">
-							<NavDropdown.Item href="#action/3.1">Actionnn</NavDropdown.Item>
+						<NavDropdown title="Dormitory" id="basic-nav-dropdown">
+							<NavDropdown.Item href="#action/3.1">
+								Homestay Serang
+							</NavDropdown.Item>
 							<NavDropdown.Item href="#action/3.2">
-								Another action
+								Info Kos Serang
 							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.3">Mamikos</NavDropdown.Item>
 							<NavDropdown.Divider />
-							<NavDropdown.Item href="#action/3.4">
-								Separated link
-							</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>
 					<div className="navbar-right">
-						<Button className="button-daftar me-2" href="/">
+						<Button
+							className="button-daftar me-2"
+							href="https://piksiinputserang.ac.id/pmb-v2/register">
 							<FontAwesomeIcon icon={faUserGraduate} /> Daftar
 						</Button>
-						<Button className="button-masuk" href="/">
+						<Button
+							className="button-masuk"
+							href="https://piksiinputserang.ac.id/pmb-v2/login">
 							<i className="bi bi-box-arrow-in-right bold-icon"></i>Masuk
 						</Button>
 					</div>
