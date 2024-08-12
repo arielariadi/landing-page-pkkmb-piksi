@@ -9,10 +9,11 @@
 
 .beasiswa-peduli-banten .header-box {
 	background-color: var(--primary-color);
-	width: 25%;
+	width: 40%;
 	border-radius: 5px;
 	padding: 10px;
 	position: relative;
+	margin-top: 25px;
 }
 
 .beasiswa-peduli-banten .header-box h3 {
@@ -20,6 +21,10 @@
 	text-align: center;
 	margin: 0 auto;
 	font-size: 1.5rem;
+}
+
+.beasiswa-peduli-banten img {
+	width: 70rem;
 }
 
 @media screen and (max-width: 475px) {
@@ -37,5 +42,21 @@
 
 	.beasiswa-peduli-banten .header-box h3 {
 		font-size: 1rem;
+	}
+
+	.beasiswa-peduli-banten img {
+		width: 25.5rem;
+	}
+}
+
+@media (max-width: 375px) {
+	.beasiswa-peduli-banten img {
+		width: 22.5rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.beasiswa-peduli-banten img {
+		width: 19rem;
 	}
 }

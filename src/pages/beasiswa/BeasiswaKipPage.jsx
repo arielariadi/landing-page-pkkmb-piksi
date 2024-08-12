@@ -18,180 +18,121 @@ const BeasiswaKipPage = () => {
 
 								<div className="beasiswa-kip-content">
 									<p>
-										Beasiswa KIP Kuliah merupakan beasiswa dari Kementrian
-										Pendidikan dan Kebudayaan yang diberikan kepada calon
-										mahasiswa baru tahun akademik 2024/2025 yang merupakan
-										putra-putri yang tidak mampu secara ekonomi dan berpotensi
-										akademik baik.
+										<strong>Beasiswa KIP-Kuliah</strong> adalah bantuan biaya
+										pendidikan dari pemerintah bagi lulusan Sekolah Menengah
+										Atas (SMA) atau sederajat yang memiliki potensi akademik
+										baik tetapi memiliki keterbatasan ekonomi. KIP Kuliah
+										diberikan kepada mahasiswa yang lulus seleksi masuk
+										perguruan tinggi. KIP Kuliah sesuai dengan penjelasan Pasal
+										76 UU No. 12 Tahun 2012 Ayat 2 huruf b tentang bantuan
+										pendidikan yaitu dukungan biaya pendidikan yang diberikan
+										pemerintah kepada mahasiswa untuk mengikuti dan/atau
+										menyelesaikan Pendidikan Tinggi.
 									</p>
 
 									<div className="header-box">
-										<h3>Ketentuan Umum</h3>
+										<h3>Persyaratan Penerima KIP Kuliah</h3>
 									</div>
 
 									<p>
-										Calon penerima beasiswa tidak dapat mengusulkan beasiswa
-										mahasiswa baru pada skema yang lain di Universitas Amikom
-										Yogyakarta yang berpotensi double funding.
-									</p>
-
-									<div className="header-box">
-										<h3>Persyaratan Umum</h3>
-									</div>
-
-									<p>
-										Untuk mendaftar KIP Kuliah Jalur Mandiri PTS, pastikan kamu
-										memenuhi persyaratan berikut:
+										Adapun persyaratan penerima KIP Kuliah adalah sebagai
+										berikut:
 										<ol>
 											<li>
-												Lulusan SMA/SMK/MA lulusan tahun 2024, 2023 atau 2022
+												Penerima KIP Kuliah adalah siswa SMA atau sederajat yang
+												telah lulus maksimal pada 3 (tiga) tahun sebelumnya
 											</li>
 											<li>
-												Pemilik Kartu Indonesia Pintar (KIP) Pendidikan Menengah
-												/ Penerima Bantuan Iuran Jaminan Kesehatan (PBI JK) /
-												Penerima Bantuan Pangan Non-Tunai (BPNT) / Keluarga yang
-												masuk dalam Data Terpadu Kesejahteraan Sosial (DTKS) /
-												dari panti sosial/panti asuhan / Surat Keterangan Tidak
-												Mampu (SKTM)
-											</li>
-											<li>Kartu Keluarga</li>
-											<li>KTP (Pengaju dan Orang Tua)</li>
-											<li>Ijazah</li>
-											<li>Transkrip / Raport Semester 1 - 5</li>
-											<li>
-												Surat Keterangan Sehat JasmaniSurat Keterangan Sehat
-												Jasmani
+												Memiliki potensi akademik baik tetapi memiliki
+												keterbatasan ekonomi yang didukung bukti dokumen yang
+												sah
 											</li>
 											<li>
-												Rekening Listrik (Bila tidak ada rekening listrik
-												membuat surat pernyataan dengan templete
-												ungu.in/pernyataanrekeninglistrik)
+												Lulus seleksi penerimaan mahasiswa baru, dan diterima di
+												PTS pada Prodi yang dipilih oleh calon mahasiswa
 											</li>
 											<li>
-												Tagihan PBB (Bila tidak ada membuat surat pernyataan
-												dengan template: ungu.in/suratpernyataanPBB)
+												Keterbatasan ekonomi dibuktikan dengan kepemilikan
+												program bantuan pendidikan nasional dalam bentuk Kartu
+												Indonesia Pintar (KIP) atau berasal dari keluarga
+												peserta Program Keluarga Harapan (PKH), keluarga
+												pemegang Kartu Keluarga Sejahtera (KKS) serta mahasiswa
+												dari panti sosial/panti asuhan
 											</li>
 											<li>
-												Foto rumah tampak depan, samping, tengah dan bersama
-												anggota keluarga
+												Dalam hal mahasiswa belum memiliki KIP atau orang
+												tua/wali belum memiliki KKS, maka dapat tetap mendaftar
+												untuk mendapatkan KIP Kuliah asalkan memenuhi
+												persyaratan tidak mampu secara ekonomi sesuai dengan
+												ketentuan, yang dibuktikan dengan pendapatan kotor
+												gabungan orang tua/wali sebesar Rp 4.000.000,00 (empat
+												juta rupiah) atau pendapatan kotor gabungan orang
+												tua/wali dibagi jumlah anggota keluarga maksimal
+												Rp750.000,00 (tujuh ratus lima puluh ribu rupiah)
 											</li>
-											<li>
-												Surat Pernyataan Kesanggupan Menyelesaikan Studi Tepat
-												Waktu (template surat: ungu.in/PernyataanKIPAmikom)
-											</li>
-											<li>
-												Scan surat keterangan lolos tes masuk Universitas Amikom
-												Yogyakarta
-											</li>
-											<li>
-												Berkas Pendukung: Sertifikat Penghargaan, Bukti
-												Prestasi, dll.
-											</li>
+											<li>Tidak sedang menerima beasiswa lain</li>
 										</ol>
 									</p>
 
 									<div className="header-box">
-										<h3>Persyaratan Wajib</h3>
+										<h3>Pendaftaran KIP Kuliah</h3>
 									</div>
-
-									<ol>
-										<li>
-											Pemegang atau pemilik Kartu Indonesia Pintar (KIP)
-											Pendidikan Menengah
-										</li>
-										<li>
-											Berasal dari keluarga yang masuk dalam Data Terpadu
-											Kesejahteraan Sosial (DTKS) atau menerima program bantuan
-											sosial yang ditetapkan oleh Kementerian Sosial seperti
-											Program Keluarga Harapan (PKH) dan Kartu Keluarga
-											Sejahtera (KKS)
-										</li>
-										<li>
-											Masuk dalam kelompok masyarakat miskin/rentan miskin
-											maksimal pada desil 3 (tiga) Data Pensasaran Percepatan
-											Penghapusan Kemiskinan Ekstrem (P3KE) yang ditetapkan oleh
-											Kementerian Koordinator Bidang Pembangunan Manusia dan
-											Kebudayaan
-										</li>
-										<li>Mahasiswa dari panti sosial/panti asuhan</li>
-										<li>
-											Bagi Mahasiswa yang tidak memiliki kriteria pada nomor 1
-											sampai dengan 4, calon mahasiswa dapat mendaftar dengan
-											persyaratan miskin/rentan miskin yang dibuktikan dengan:{' '}
-											<ul>
-												<li>
-													Bukti pendapatan kotor gabungan orang tua/wali paling
-													banyak Rp4.000.000,- setiap bulan atau pendapatan
-													kotor gabungan orang tua/wali dibagi jumlah anggota
-													keluarga paling banyak Rp750.000,- dan
-												</li>
-												<li>
-													Bukti keluarga miskin dalam bentuk Surat Keterangan
-													Tidak Mampu (SKTM) yang dikeluarkan dan dilegalisasi
-													oleh pemerintah, minimum tingkat desa/kelurahan untuk
-													menyatakan kondisi suatu keluarga yang termasuk
-													golongan miskin atau tidak mampu.
-												</li>
-											</ul>
-										</li>
-									</ol>
-
-									<div className="header-box">
-										<h3>Program Studi</h3>
-									</div>
-
 									<p>
-										Politeknik Piksi Input Serang menawarkan program studi
-										unggulan untuk penerima beasiswa KIP Kuliah:
-										<ul>
-											<li>D4-Akuntansi Perpajakan</li>
-											<li>D3-Manajemen Informatika</li>
-											<li>D3-Akuntansi</li>
-											<li>D3-Sekretari</li>
-										</ul>
+										Tata cara pendaftaran KIP Kuliah untuk seluruh jalur masuk
+										dilakukan secara online melalui laman KIP Kuliah yaitu{' '}
+										<a
+											href="https://kip-kuliah.kemdikbud.go.id/"
+											target="_blank"
+											className="text-decoration-none">
+											kip-kuliah.kemdikbud.go.id
+										</a>
 									</p>
-
-									<div className="header-box">
-										<h3>Mekanisme Pengajuan</h3>
-									</div>
-
 									<ol>
 										<li>
-											Pendaftaran secara mandiri di{' '}
-											<a href="https://kip-kuliah.kemdikbud.go.id/">
+											Siswa dapat langsung melakukan pendaftaran secara mandiri
+											di sistem online KIP Kuliah melalui laman{' '}
+											<a
+												href="https://kip-kuliah.kemdikbud.go.id/"
+												target="_blank"
+												className="text-decoration-none">
 												kip-kuliah.kemdikbud.go.id
 											</a>
+											atau melalui KIP Kuliah mobile apps yang dapat diunduh di
+											Play Store
 										</li>
 										<li>
-											Melakukan pendaftaran melalui link{' '}
-											<a href="https://piksiinputserang.ac.id/pmb-v2/register">
-												piksiinputserang.ac.id/pmb-v2/register
-											</a>
+											Pada saat pendaftaran, siswa memasukkan NIK, NISN, NPSN
+											dan alamat email yang aktif
 										</li>
-										<li>Melengkapi Berkas</li>
-										<li>Seleksi Administrasi</li>
 										<li>
-											Seleksi Substansi Wawancara di Politeknik Piksi Input
-											Serang
+											Sistem KIP Kuliah selanjutnya akan melakukan validasi NIK,
+											NISN dan NPSN serta kelayakan mendapatkan KIP Kuliah
 										</li>
-										<li>Penetapan Penerimaan Beasiswa</li>
+										<li>
+											Jika proses validasi berhasil, Sistem KIP Kuliah
+											selanjutnya akan mengirimkan Nomor Pendaftaran dan Kode
+											Akses ke alamat email yang didaftarkan
+										</li>
+										<li>
+											Siswa menyelesaikan proses pendaftaran KIP Kuliah dan
+											memilih proses seleksi Mandiri dan memilih Politeknik
+											Piksi Input Serang serta Program Studi yang dipilih
+										</li>
+										<li>
+											Siswa menyelesaikan proses pendaftaran di portal atau
+											sistem informasi seleksi nasional masuk perguruan tinggi
+											sesuai jalur yang dipilih lalu mengklik simpan
+										</li>
 									</ol>
 
 									<div className="header-box">
-										<h3>Besaran Beasiswa</h3>
+										<h3>Alur Pendaftaran Mahasiswa Baru dan KIP Kuliah</h3>
 									</div>
 
-									<ol>
-										<li>Dana Pengembangan</li>
-										<li>
-											SPP Tetap selama 6 semester jenjang D3 dan 8 semester
-											jenjang D4
-										</li>
-										<li>
-											SPP Variabel selama 6 semester jenjang D3 dan 8 semester
-											jenjang D4
-										</li>
-									</ol>
+									<img
+										src="/img/diagram-alur-pendaftaran.png"
+										alt="Diagram Alur Pendaftaran"
+									/>
 								</div>
 							</Col>
 						</Row>

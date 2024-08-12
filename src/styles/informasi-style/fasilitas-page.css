@@ -2,3 +2,21 @@
 	margin-top: 100px;
 	font-family: 'Rubik', sans-serif;
 }
+
+@media screen and (max-width: 475px) {
+	.fasilitas img {
+		width: 25rem;
+	}
+}
+
+@media (max-width: 375px) {
+	.fasilitas img {
+		width: 22rem;
+	}
+}
+
+@media (max-width: 320px) {
+	.fasilitas img {
+		width: 18.5rem;
+	}
+}

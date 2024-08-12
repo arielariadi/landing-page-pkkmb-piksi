@@ -57,7 +57,9 @@ const NavbarComponentSecond = () => {
 							<NavDropdown.Item href="/pemberkasan">
 								Pemberkasan
 							</NavDropdown.Item>
-							<NavDropdown.Item href="/fasilitas">Fasilitas</NavDropdown.Item>
+							<NavDropdown.Item href="/fasilitas">
+								Fasilitas PMB
+							</NavDropdown.Item>
 
 							<NavDropdown.Item href="/brosur">Brosur</NavDropdown.Item>
 						</NavDropdown>

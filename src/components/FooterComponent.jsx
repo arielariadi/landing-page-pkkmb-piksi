@@ -45,22 +45,19 @@ const FooterComponent = () => {
 								<li>
 									<a href="#fasilitasKampus">Fasilitas Kampus</a>
 								</li>
-								<li>
-									<a href="#faq">FAQ</a>
-								</li>
 							</ul>
 						</div>
 						<div className="col-6 col-sm-6 col-md-2 item">
-							<h3>Pendaftaran</h3>
+							<h3>Beasiswa</h3>
 							<ul>
 								<li>
-									<a href="#landingPage">Reguler</a>
+									<a href="/beasiswa-kip">Kartu Indonesia Pintar (KIP)</a>
 								</li>
 								<li>
-									<a href="#jenjangPendidikan">Alih Jalur</a>
+									<a href="/beasiswa-pemkot-cilegon">Pemkot Cilegon (KCS)</a>
 								</li>
 								<li>
-									<a href="#infoPmb">Biaya Kuliah</a>
+									<a href="/beasiswa-peduli-banten">Peduli Banten (BPB)</a>
 								</li>
 							</ul>
 						</div>
@@ -103,7 +100,9 @@ const FooterComponent = () => {
 							<i className="bi bi-twitter"></i>
 						</a>
 
-						<a href="#" target="_blank">
+						<a
+							href="https://www.instagram.com/official.poltek.piksi/"
+							target="_blank">
 							<i className="bi bi-instagram"></i>
 						</a>
 					</div>

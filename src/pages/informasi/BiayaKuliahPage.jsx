@@ -13,6 +13,12 @@ const BiayaKuliahPage = () => {
 								<div className="biaya-kuliah-header">
 									<h1 className="text-center">Biaya Kuliah</h1>
 								</div>
+
+								<img
+									src="/img/biaya-kuliah.jpeg"
+									alt="Biaya Kuliah"
+									className="mt-4"
+								/>
 							</Col>
 						</Row>
 					</Container>

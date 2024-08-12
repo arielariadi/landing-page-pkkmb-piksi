@@ -470,7 +470,7 @@ const LandingPage = () => {
 				</section>
 			</div>
 
-			<div className="fasilitas-kampus">
+			<div className="fasilitas-kampus" id="fasilitasKampus">
 				<section className="w-100 min-vh-100 d-flex">
 					<Container>
 						<div className="fasilitas-kampus-header" data-aos="fade-up">

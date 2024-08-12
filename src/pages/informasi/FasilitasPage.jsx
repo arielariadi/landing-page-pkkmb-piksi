@@ -11,8 +11,14 @@ const FasilitasPage = () => {
 						<Row>
 							<Col lg="12">
 								<div className="fasilitas-header">
-									<h1 className="text-center">Fasilitas</h1>
+									<h1 className="text-center">Fasilitas PMB</h1>
 								</div>
+
+								<img
+									src="./img/fasilitas-pmb.jpeg"
+									alt="Fasilitas PMB"
+									className="mt-4"
+								/>
 							</Col>
 						</Row>
 					</Container>
