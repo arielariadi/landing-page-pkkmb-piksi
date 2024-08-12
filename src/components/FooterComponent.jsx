@@ -1,3 +1,4 @@
+import { Button } from 'react-bootstrap';
 import '../styles/component-styles/footer-component.css';
 
 const FooterComponent = () => {
@@ -8,7 +9,28 @@ const FooterComponent = () => {
 			<footer>
 				<div className="container">
 					<div className="row">
-						<div className="col-sm-6 col-md-3 item">
+						<div className="kontak col-sm-6 col-md-4 item">
+							<img src="/img/logo-piksi.png" alt="" />
+							<p>
+								Jalan Serang-Cilegon No. KM. 8, Serang, Kecamatan Kramatwatu,
+								Kabupaten Serang, Banten 42161
+							</p>
+							<ul>
+								<li className="bi bi-telephone-fill">
+									<p>0812-1933-3386</p>
+								</li>
+								<li className="bi bi-whatsapp">
+									<p>0812-1933-3386</p>
+								</li>
+								<li className="bi bi-mailbox2">
+									<p>Kode Pos: 42161</p>
+								</li>
+								<li className="bi bi-envelope-at-fill">
+									<p>admin@piksiinputserang.ac.id</p>
+								</li>
+							</ul>
+						</div>
+						<div className="col-6 col-sm-6 col-md-2 item">
 							<h3>Menu</h3>
 							<ul>
 								<li>
@@ -21,9 +43,6 @@ const FooterComponent = () => {
 									<a href="#infoPmb">Info PMB</a>
 								</li>
 								<li>
-									<a href="#beasiswa">Info PMB</a>
-								</li>
-								<li>
 									<a href="#fasilitasKampus">Fasilitas Kampus</a>
 								</li>
 								<li>
@@ -31,36 +50,62 @@ const FooterComponent = () => {
 								</li>
 							</ul>
 						</div>
-						<div className="kontak col-sm-6 col-md-3 item">
-							<h3>Kontak</h3>
+						<div className="col-6 col-sm-6 col-md-2 item">
+							<h3>Pendaftaran</h3>
 							<ul>
-								<li className="bi bi-telephone-fill">
-									<p>0812-1933-3386</p>
+								<li>
+									<a href="#landingPage">Reguler</a>
 								</li>
-								<li className="bi bi-whatsapp">
-									<p>0812-1933-3386</p>
+								<li>
+									<a href="#jenjangPendidikan">Alih Jalur</a>
+								</li>
+								<li>
+									<a href="#infoPmb">Biaya Kuliah</a>
 								</li>
 							</ul>
 						</div>
-						<div className="col-md-6 item text">
-							<h3>Politeknik Piksi Input Serang</h3>
-							<p>
-								Jalan Serang-Cilegon No. KM. 8, Serang, Kecamatan Kramatwatu,
-								Kabupaten Serang, Banten 42161
-							</p>
+						<div className="col-6 col-sm-6 col-md-2 item">
+							<h3>Dormitory</h3>
+							<ul>
+								<li>
+									<a href="#homeStaySerang">Homestay Serang</a>
+								</li>
+								<li>
+									<a href="#infoKosSerang">Info Kos Serang</a>
+								</li>
+								<li>
+									<a href="#mamikos">Mamikos</a>
+								</li>
+							</ul>
 						</div>
-						<div className="col item social">
-							<a href="#">
-								<i className="bi bi-facebook"></i>
-							</a>
-							<a href="#">
-								<i className="bi bi-twitter"></i>
-							</a>
 
-							<a href="#" target="_blank">
-								<i className="bi bi-instagram"></i>
-							</a>
+						<div className="col-6 col-sm-6 col-md-2 item">
+							<h3>Bantuan</h3>
+							<ul>
+								<li>
+									<a href="#faq">FAQ</a>
+								</li>
+								<li>
+									<a
+										href="https://wa.me/+6281219333386?text=Halo%20saya%20mau%20bertanya%20seputar%20Penerimaan%20Mahasiswa%20Baru%20(PMB)"
+										target="_blank">
+										<Button>Customer Support</Button>
+									</a>
+								</li>
+							</ul>
 						</div>
+					</div>
+					<div className="item social">
+						<a href="#">
+							<i className="bi bi-facebook"></i>
+						</a>
+						<a href="#">
+							<i className="bi bi-twitter"></i>
+						</a>
+
+						<a href="#" target="_blank">
+							<i className="bi bi-instagram"></i>
+						</a>
 					</div>
 					<p className="mt-3 text-center">
 						Politeknik Piksi Input Serang &copy; {currentYear}

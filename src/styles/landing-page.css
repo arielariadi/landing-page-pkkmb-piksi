@@ -282,6 +282,10 @@
 	height: 430px;
 }
 
+.beasiswa .swiper-pagination {
+	display: none;
+}
+
 .beasiswa .mySwiper .swiper-slide {
 	/* display: flex;
 	align-items: center;
@@ -395,8 +399,50 @@
 }
 /* End Fasilitas Kampus */
 
+/* Box Pertanyaan */
+.box-pertanyaan {
+	margin-top: 30px;
+}
+
+.box-pertanyaan .box-pertanyaan-wrapper {
+	background-color: var(--primary-color);
+	padding: 50px;
+	border-radius: 10px;
+}
+
+.box-pertanyaan .box-pertanyaan-wrapper .box-pertanyaan-content {
+	color: white;
+}
+
+.box-pertanyaan .box-pertanyaan-wrapper .box-pertanyaan-button {
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+.box-pertanyaan
+	.box-pertanyaan-wrapper
+	.box-pertanyaan-button
+	.button-panduan-pmb {
+	background-color: rgb(226, 226, 235);
+	color: var(--primary-color);
+	padding: 10px 15px;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+.box-pertanyaan
+	.box-pertanyaan-wrapper
+	.box-pertanyaan-button
+	.button-panduan-pmb:hover {
+	background-color: var(--primary-color);
+	color: white;
+	border: 1px solid white;
+}
+/* End Box Pertanyaan */
+
 /* FAQ */
-.faq {
+/* .faq {
 	margin-top: 70px;
 }
 
@@ -439,8 +485,55 @@
 .faq .accordion-button:not(.collapsed) {
 	color: white;
 	background: linear-gradient(var(--primary-color), var(--secondary-color));
-}
+} */
 /* End FAQ */
+
+/* Tanya Kami */
+.tanya-kami {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tanya-kami:hover {
+	transform: scale(1.1);
+}
+
+.tanya-kami .tanya-kami-wrapper {
+	background-color: var(--primary-color);
+	display: flex;
+	align-items: center;
+	padding: 10px 15px;
+	border-radius: 5px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tanya-kami .tanya-kami-wrapper .tanya-kami-icon {
+	display: flex;
+	align-items: center;
+}
+
+.tanya-kami .tanya-kami-wrapper .tanya-kami-icon i {
+	font-size: 25px;
+	color: white;
+}
+
+.tanya-kami .tanya-kami-wrapper .tanya-kami-content {
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+}
+
+.tanya-kami .tanya-kami-wrapper .tanya-kami-content p {
+	color: white;
+	font-family: 'Rubik', sans-serif;
+	font-size: 1.1rem;
+	font-weight: 400;
+	margin: 0;
+}
+/* End Tanya Kami */
 
 /******* Responsive CSS *******/
 @media screen and (max-width: 475px) {
@@ -534,6 +627,11 @@
 		font-size: 1rem;
 	}
 
+	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan ul li span {
+		font-size: 0.9rem;
+		margin-left: 24px;
+	}
+
 	.jenjang-pendidikan .carousel-wrapper-jenjang-pendidikan .row {
 		flex-direction: column;
 	}
@@ -620,7 +718,7 @@
 	}
 
 	.beasiswa .mySwiper {
-		height: 550px;
+		height: auto;
 	}
 	/* End Beasiswa */
 
@@ -644,6 +742,26 @@
 		height: 80%;
 	}
 	/* End Fasilitas Kampus */
+
+	/* Box Pertanyaan */
+	.box-pertanyaan {
+		margin-top: 40px;
+	}
+
+	.box-pertanyaan .box-pertanyaan-wrapper {
+		width: 92%;
+		padding: 35px;
+	}
+
+	.box-pertanyaan .box-pertanyaan-wrapper .box-pertanyaan-content {
+		width: 100%;
+	}
+
+	.box-pertanyaan .box-pertanyaan-wrapper .box-pertanyaan-button {
+		margin-top: 10px;
+		display: block;
+	}
+	/* End Box Pertanyaan */
 
 	/* FAQ */
 	.faq .faq-header h4 {

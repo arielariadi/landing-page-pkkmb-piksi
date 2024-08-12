@@ -17,6 +17,7 @@ import BeasiswaPeduliBantenPage from './pages/beasiswa/BeasiswaPeduliBantenPage'
 import BiayaKuliahPage from './pages/informasi/BiayaKuliahPage';
 import PemberkasanPage from './pages/informasi/PemberkasanPage';
 import FasilitasPage from './pages/informasi/FasilitasPage';
+import BrosurPage from './pages/informasi/BrosurPage';
 
 function App() {
 	const location = useLocation();
@@ -42,6 +43,7 @@ function App() {
 				<Route path="/biaya-kuliah" element={<BiayaKuliahPage />} />
 				<Route path="/pemberkasan" element={<PemberkasanPage />} />
 				<Route path="/fasilitas" element={<FasilitasPage />} />
+				<Route path="/brosur" element={<BrosurPage />} />
 			</Routes>
 
 			<FooterComponent />

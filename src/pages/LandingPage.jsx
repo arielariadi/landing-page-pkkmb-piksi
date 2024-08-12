@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useEffect, useRef } from 'react';
-import { Container, Row, Col, Button, Card, Accordion } from 'react-bootstrap';
+import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -52,6 +52,8 @@ const LandingPage = () => {
 		AOS.refresh();
 	}, []);
 
+	const currentYear = new Date().getFullYear();
+
 	return (
 		<>
 			<div className="landing-page" id="landingPage">
@@ -71,7 +73,7 @@ const LandingPage = () => {
 										<div className="gelombang-content-wrapper">
 											<p className="gelombang-text">Gelombang 4</p>
 											<p className="gelombang-date">
-												01 Juli 2024 s/d 30 Agustus 2024
+												01 Juli {currentYear} s/d 30 Agustus {currentYear}
 											</p>
 										</div>
 									</div>
@@ -273,7 +275,7 @@ const LandingPage = () => {
 										mahasiswa
 									</Card.Text>
 
-									<Button>Detail</Button>
+									<Button>Info Lebih Lanjut</Button>
 								</Card.Body>
 							</Card>
 
@@ -294,7 +296,7 @@ const LandingPage = () => {
 										termasuk biaya perkuliahan, fasilitas, dan layanan mahasiswa
 									</Card.Text>
 									<a href="">
-										<Button>Detail</Button>
+										<Button>Info Lebih Lanjut</Button>
 									</a>
 								</Card.Body>
 							</Card>
@@ -316,7 +318,7 @@ const LandingPage = () => {
 									</Card.Text>
 
 									<a href="#beasiswa">
-										<Button>Detail</Button>
+										<Button>Info Lebih Lanjut</Button>
 									</a>
 								</Card.Body>
 							</Card>
@@ -339,7 +341,7 @@ const LandingPage = () => {
 										pada halaman berikut
 									</Card.Text>
 
-									<Button>Detail</Button>
+									<Button>Info Lebih Lanjut</Button>
 								</Card.Body>
 							</Card>
 						</div>
@@ -348,7 +350,7 @@ const LandingPage = () => {
 			</div>
 
 			<div className="beasiswa" id="beasiswa">
-				<section className="w-100 min-vh-100 d-flex">
+				<section className="w-100 min-vh-75 d-flex">
 					<Container>
 						<div className="beasiswa-header" data-aos="fade-up">
 							<h4>BEASISWA</h4>
@@ -391,7 +393,7 @@ const LandingPage = () => {
 												data-aos="fade-left">
 												<img
 													className="d-block w-100"
-													src="/img/person.png"
+													src="/img/beasiswa-kip.png"
 													alt="First slide"
 												/>
 											</Col>
@@ -425,7 +427,7 @@ const LandingPage = () => {
 												data-aos="fade-left">
 												<img
 													className="d-block w-100"
-													src="/img/person.png"
+													src="/img/beasiswa-kcs.png"
 													alt="Second slide"
 												/>
 											</Col>
@@ -455,7 +457,7 @@ const LandingPage = () => {
 												data-aos="fade-left">
 												<img
 													className="d-block w-100"
-													src="/img/person.png"
+													src="/img/beasiswa-peduli-banten.png"
 													alt="Second slide"
 												/>
 											</Col>
@@ -582,7 +584,33 @@ const LandingPage = () => {
 				</section>
 			</div>
 
-			<div className="faq" id="faq">
+			<div className="box-pertanyaan">
+				<section className="w-100 overflow-hidden">
+					<Container className="box-pertanyaan-wrapper">
+						<Row>
+							<Col lg={8}>
+								<div className="box-pertanyaan-content">
+									<h2>Punya Pertanyaan Seputar PMB?</h2>
+									<p>
+										Klik tombol "Panduan PMB" untuk melihat informasi lebih
+										lanjut mengenai Penerimaan Mahasiswa Baru Politeknik Piksi
+										Input Serang atau tanya kami melalui fitur chat
+									</p>
+								</div>
+							</Col>
+							<Col lg={4}>
+								<div className="box-pertanyaan-button">
+									<a href="#infoPmb">
+										<Button className="button-panduan-pmb">Panduan PMB</Button>
+									</a>
+								</div>
+							</Col>
+						</Row>
+					</Container>
+				</section>
+			</div>
+
+			{/* <div className="faq" id="faq">
 				<section className="w-100 d-flex overflow-hidden">
 					<Container>
 						<div className="faq-header">
@@ -644,7 +672,24 @@ const LandingPage = () => {
 						</Accordion>
 					</Container>
 				</section>
-			</div>
+			</div> */}
+
+			<a
+				href="https://wa.me/+6281219333386?text=Halo%20saya%20mau%20bertanya%20seputar%20Penerimaan%20Mahasiswa%20Baru%20(PMB)"
+				target="_blank">
+				<div className="tanya-kami">
+					<Container>
+						<div className="tanya-kami-wrapper">
+							<div className="tanya-kami-icon">
+								<i className="bi bi-whatsapp"></i>
+							</div>
+							<div className="tanya-kami-content">
+								<p>Tanya Kami</p>
+							</div>
+						</div>
+					</Container>
+				</div>
+			</a>
 		</>
 	);
 };

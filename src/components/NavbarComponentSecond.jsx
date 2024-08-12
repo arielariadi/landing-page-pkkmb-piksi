@@ -57,31 +57,21 @@ const NavbarComponentSecond = () => {
 							<NavDropdown.Item href="/pemberkasan">
 								Pemberkasan
 							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">Fasilitas</NavDropdown.Item>
+							<NavDropdown.Item href="/fasilitas">Fasilitas</NavDropdown.Item>
 
-							<NavDropdown.Item href="#action/3.4">Brosur</NavDropdown.Item>
+							<NavDropdown.Item href="/brosur">Brosur</NavDropdown.Item>
 						</NavDropdown>
 						<NavDropdown title="Kegiatan" id="basic-nav-dropdown">
-							<NavDropdown.Item href="#action/3.1">Actionnn</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.2">
-								Another action
-							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-							<NavDropdown.Divider />
-							<NavDropdown.Item href="#action/3.4">
-								Separated link
-							</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.1">PPM</NavDropdown.Item>
 						</NavDropdown>
-						<NavDropdown title="Kegiatan" id="basic-nav-dropdown">
-							<NavDropdown.Item href="#action/3.1">Actionnn</NavDropdown.Item>
+						<NavDropdown title="Dormitory" id="basic-nav-dropdown">
+							<NavDropdown.Item href="#action/3.1">
+								Homestay Serang
+							</NavDropdown.Item>
 							<NavDropdown.Item href="#action/3.2">
-								Another action
+								Info Kos Serang
 							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-							<NavDropdown.Divider />
-							<NavDropdown.Item href="#action/3.4">
-								Separated link
-							</NavDropdown.Item>
+							<NavDropdown.Item href="#action/3.3">Mamikos</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>
 					<div className="navbar-right">

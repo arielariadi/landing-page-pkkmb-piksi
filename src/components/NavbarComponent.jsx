@@ -57,9 +57,9 @@ const NavbarComponent = () => {
 							<NavDropdown.Item href="/pemberkasan">
 								Pemberkasan
 							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">Fasilitas</NavDropdown.Item>
+							<NavDropdown.Item href="/fasilitas">Fasilitas</NavDropdown.Item>
 
-							<NavDropdown.Item href="#action/3.4">Brosur</NavDropdown.Item>
+							<NavDropdown.Item href="/brosur">Brosur</NavDropdown.Item>
 						</NavDropdown>
 						<NavDropdown title="Kegiatan" id="basic-nav-dropdown">
 							<NavDropdown.Item href="#action/3.1">PPM</NavDropdown.Item>
@@ -72,7 +72,6 @@ const NavbarComponent = () => {
 								Info Kos Serang
 							</NavDropdown.Item>
 							<NavDropdown.Item href="#action/3.3">Mamikos</NavDropdown.Item>
-							<NavDropdown.Divider />
 						</NavDropdown>
 					</Nav>
 					<div className="navbar-right">
