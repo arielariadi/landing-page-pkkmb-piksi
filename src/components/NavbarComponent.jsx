@@ -54,26 +54,30 @@ const NavbarComponent = () => {
 							<NavDropdown.Item href="/biaya-kuliah">
 								Biaya Kuliah
 							</NavDropdown.Item>
-							<NavDropdown.Item href="/pemberkasan">
+							{/* <NavDropdown.Item href="/pemberkasan">
 								Pemberkasan
-							</NavDropdown.Item>
+							</NavDropdown.Item> */}
 							<NavDropdown.Item href="/fasilitas">
 								Fasilitas PMB
 							</NavDropdown.Item>
 
-							<NavDropdown.Item href="/brosur">Brosur</NavDropdown.Item>
+							{/* <NavDropdown.Item href="/brosur">Brosur</NavDropdown.Item> */}
 						</NavDropdown>
-						<NavDropdown title="Kegiatan" id="basic-nav-dropdown">
+						{/* <NavDropdown title="Kegiatan" id="basic-nav-dropdown">
 							<NavDropdown.Item href="#action/3.1">PPM</NavDropdown.Item>
-						</NavDropdown>
+						</NavDropdown> */}
 						<NavDropdown title="Dormitory" id="basic-nav-dropdown">
-							<NavDropdown.Item href="#action/3.1">
+							{/* <NavDropdown.Item href="#action/3.1">
 								Homestay Serang
+							</NavDropdown.Item> */}
+							<NavDropdown.Item
+								href="https://wa.me/+6287871166682?text=Halo%20saya%20mau%20bertanya%20seputar%20info%20kos"
+								target="_blank">
+								Info Kos Sekitar Kampus
 							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.2">
-								Info Kos Serang
+							<NavDropdown.Item href="https://mamikos.com/" target="_blank">
+								Mamikos
 							</NavDropdown.Item>
-							<NavDropdown.Item href="#action/3.3">Mamikos</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>
 					<div className="navbar-right">

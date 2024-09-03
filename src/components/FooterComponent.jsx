@@ -64,14 +64,20 @@ const FooterComponent = () => {
 						<div className="col-6 col-sm-6 col-md-2 item">
 							<h3>Dormitory</h3>
 							<ul>
-								<li>
+								{/* <li>
 									<a href="#homeStaySerang">Homestay Serang</a>
+								</li> */}
+								<li>
+									<a
+										href="https://wa.me/+6287871166682?text=Halo%20saya%20mau%20bertanya%20seputar%20info%20kos"
+										target="_blank">
+										Info Kos Sekitar Kampus
+									</a>
 								</li>
 								<li>
-									<a href="#infoKosSerang">Info Kos Serang</a>
-								</li>
-								<li>
-									<a href="#mamikos">Mamikos</a>
+									<a href="https://mamikos.com/" target="_blank">
+										Mamikos
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -79,9 +85,9 @@ const FooterComponent = () => {
 						<div className="col-6 col-sm-6 col-md-2 item">
 							<h3>Bantuan</h3>
 							<ul>
-								<li>
+								{/* <li>
 									<a href="#faq">FAQ</a>
-								</li>
+								</li> */}
 								<li>
 									<a
 										href="https://wa.me/+6281219333386?text=Halo%20saya%20mau%20bertanya%20seputar%20Penerimaan%20Mahasiswa%20Baru%20(PMB)"
@@ -93,11 +99,15 @@ const FooterComponent = () => {
 						</div>
 					</div>
 					<div className="item social">
-						<a href="#">
+						<a
+							href="https://www.facebook.com/politeknikpiksiinput.serang"
+							target="_blank">
 							<i className="bi bi-facebook"></i>
 						</a>
-						<a href="#">
-							<i className="bi bi-twitter"></i>
+						<a
+							href="https://www.youtube.com/@politeknikpiksiinputserang7652"
+							target="_blank">
+							<i className="bi bi-youtube"></i>
 						</a>
 
 						<a

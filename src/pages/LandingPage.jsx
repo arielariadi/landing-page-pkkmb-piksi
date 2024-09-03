@@ -85,7 +85,7 @@ const LandingPage = () => {
 											Daftar Sekarang
 										</Button>
 									</a>
-									<a href="/" className="panduan-pmb">
+									<a href="#infoPmb" className="panduan-pmb">
 										<p>
 											Panduan PMB <i className="bi bi-arrow-right"></i>
 										</p>
@@ -275,7 +275,10 @@ const LandingPage = () => {
 										mahasiswa
 									</Card.Text>
 
-									<Button>Info Lebih Lanjut</Button>
+									<a href="#beasiswa">
+										{' '}
+										<Button>Info Lebih Lanjut</Button>
+									</a>
 								</Card.Body>
 							</Card>
 
@@ -295,7 +298,7 @@ const LandingPage = () => {
 										Biaya kuliah mencakup berbagai kebutuhan pendidikan,
 										termasuk biaya perkuliahan, fasilitas, dan layanan mahasiswa
 									</Card.Text>
-									<a href="">
+									<a href="/biaya-kuliah">
 										<Button>Info Lebih Lanjut</Button>
 									</a>
 								</Card.Body>
@@ -341,7 +344,9 @@ const LandingPage = () => {
 										pada halaman berikut
 									</Card.Text>
 
-									<Button>Info Lebih Lanjut</Button>
+									<a href="#">
+										<Button>Info Lebih Lanjut</Button>
+									</a>
 								</Card.Body>
 							</Card>
 						</div>
