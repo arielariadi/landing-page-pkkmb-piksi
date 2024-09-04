@@ -64,26 +64,26 @@ const BeasiswaPemkotCilegonPage = () => {
 										dilakukan secara online melalui laman Penerimaan Mahasiswa
 										Baru (PMB) yaitu{' '}
 										<a
-											href="https://piksiinputserang.ac.id/"
+											href="https://piksiinputserang.ac.id/pmb-v2/login"
 											className="text-decoration-none"
 											target="_blank">
 											{' '}
-											https://piksiinputserang.ac.id/
+											https://piksiinputserang.ac.id/pmb-v2/login
 										</a>
 									</p>
 									<ol>
 										<li>
 											Melengkapi form yang tersedia pada
 											<a
-												href="https://piksiinputserang.ac.id/"
+												href="https://piksiinputserang.ac.id/pmb-v2/register"
 												className="text-decoration-none"
 												target="_blank">
 												{' '}
-												https://piksiinputserang.ac.id/
+												https://piksiinputserang.ac.id/pmb-v2/register
 											</a>
 										</li>
 										<li>
-											Calon Penerima Beasiswa melakukan proses sleksi
+											Calon Penerima Beasiswa melakukan proses seleksi
 											administrasi dan Tes Minat Bakat dari Politeknik Piksi
 											Input Serang
 										</li>

@@ -96,7 +96,7 @@ const BeasiswaKipPage = () => {
 												target="_blank"
 												className="text-decoration-none">
 												kip-kuliah.kemdikbud.go.id
-											</a>
+											</a>{' '}
 											atau melalui KIP Kuliah mobile apps yang dapat diunduh di
 											Play Store
 										</li>
