@@ -258,7 +258,7 @@ const LandingPage = () => {
 							className="info-pmb-wrapper d-flex justify-content-center gap-3"
 							data-aos="fade-up">
 							<Card>
-								<Card.Body>
+								<Card.Body className="d-flex flex-column justify-content-between">
 									<Card.Img
 										variant="top"
 										src="/img/alur-pendaftaran-icon.png"
@@ -283,7 +283,7 @@ const LandingPage = () => {
 							</Card>
 
 							<Card>
-								<Card.Body>
+								<Card.Body className="d-flex flex-column justify-content-between">
 									<Card.Img
 										variant="top"
 										src="/img/biaya-kuliah-icon.png"
@@ -305,7 +305,7 @@ const LandingPage = () => {
 							</Card>
 
 							<Card>
-								<Card.Body>
+								<Card.Body className="d-flex flex-column justify-content-between">
 									<Card.Img
 										variant="top"
 										src="/img/beasiswa-icon.png"
@@ -327,7 +327,7 @@ const LandingPage = () => {
 							</Card>
 
 							<Card>
-								<Card.Body>
+								<Card.Body className="d-flex flex-column justify-content-between">
 									<Card.Img
 										variant="top"
 										src="/img/hasil-kelulusan-icon.png"
@@ -415,12 +415,13 @@ const LandingPage = () => {
 													Kebijakan beasiswa full sarjana yang diimplementasikan
 													melalui program Kartu Cilegon Sejahtera (KCS) ini
 													menargetkan pemberian 1.000 beasiswa full sarjana per
-													tahun. Sehingga hingga 2025 ditargetkan bisa diberikan
-													5.000 beasiswa full sarjana untuk mahasiswa asal Kota
-													Cilegon. Mahasiswa yang mendapat beasiswa ini akan
-													menerima bantuan Rp3.000.000 per semester. Tiap
-													mahasiswa akan mendapat bantuan selama 8 semester yang
-													berlaku di Perguruan Tinggi di seluruh Indonesia
+													tahun. Sehingga hingga {currentYear + 1} ditargetkan
+													bisa diberikan 5.000 beasiswa full sarjana untuk
+													mahasiswa asal Kota Cilegon. Mahasiswa yang mendapat
+													beasiswa ini akan menerima bantuan Rp3.000.000 per
+													semester. Tiap mahasiswa akan mendapat bantuan selama
+													8 semester yang berlaku di Perguruan Tinggi di seluruh
+													Indonesia
 												</p>
 
 												<a href="/beasiswa-pemkot-cilegon">

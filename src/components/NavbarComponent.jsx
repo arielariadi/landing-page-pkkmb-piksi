@@ -31,7 +31,7 @@ const NavbarComponent = () => {
 						<img src="/img/logo-piksi.png" alt="Logo" className="logo" />
 					</Navbar.Brand>
 					<h2 className="d-flex align-items-center m-0 text-white">
-						PMB 2024/2025
+						PMB {new Date().getFullYear()}/{new Date().getFullYear() + 1}
 					</h2>
 				</div>
 
