@@ -117,9 +117,6 @@ const LandingPage = () => {
 		isDateInRange(currentDate, item.tanggalMulai, item.tanggalSelesai)
 	);
 
-	console.log('Tanggal sekarang:', currentDate);
-	console.log('Gelombang Aktif:', activeGelombang);
-
 	return (
 		<>
 			<div className="landing-page" id="landingPage">
