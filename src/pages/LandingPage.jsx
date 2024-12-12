@@ -52,7 +52,73 @@ const LandingPage = () => {
 		AOS.refresh();
 	}, []);
 
+	const currentDate = new Date();
 	const currentYear = new Date().getFullYear();
+	const previousYear = new Date().getFullYear() - 1;
+	const nextYear = new Date().getFullYear() + 1;
+
+	const gelombangData = [
+		{
+			gelombang: `Gelombang 1`,
+			tanggalMulai: new Date(previousYear, 10, 1), // 1 November tahun sebelumnya
+			tanggalSelesai: new Date(currentYear, 0, 30), // 30 Januari tahun sekarang
+		},
+		{
+			gelombang: `Gelombang 1`,
+			tanggalMulai: new Date(currentYear, 10, 1), // 1 November tahun sekarang
+			tanggalSelesai: new Date(nextYear, 0, 30), // 30 Januari tahun depan
+		},
+		{
+			gelombang: 'Gelombang 2',
+			tanggalMulai: new Date(currentYear, 0, 31), // 31 Januari tahun ini
+			tanggalSelesai: new Date(currentYear, 3, 30), // 30 April tahun ini
+		},
+		{
+			gelombang: 'Gelombang 3',
+			tanggalMulai: new Date(currentYear, 4, 1), // 1 Mei tahun ini
+			tanggalSelesai: new Date(currentYear, 5, 30), // 30 Juni tahun ini
+		},
+		{
+			gelombang: 'Gelombang 4',
+			tanggalMulai: new Date(currentYear, 6, 1), // 1 Juli tahun ini
+			tanggalSelesai: new Date(currentYear, 7, 30), // 30 Agustus tahun ini
+		},
+		{
+			gelombang: 'Gelombang 5',
+			tanggalMulai: new Date(currentYear, 8, 1), // 1 September tahun ini
+			tanggalSelesai: new Date(currentYear, 8, 30), // 30 September tahun ini
+		},
+		{
+			gelombang: 'Gelombang 6',
+			tanggalMulai: new Date(currentYear, 9, 1), // 1 Oktober tahun ini
+			tanggalSelesai: new Date(currentYear, 9, 11), // 11 Oktober tahun ini
+		},
+	];
+
+	const isDateInRange = (date, startDate, endDate) => {
+		const checkDate = new Date(date);
+		const start = new Date(startDate);
+		const end = new Date(endDate);
+
+		checkDate.setHours(0, 0, 0, 0);
+		start.setHours(0, 0, 0, 0);
+		end.setHours(0, 0, 0, 0);
+
+		// Jika rentang tanggal melintasi tahun baru
+		if (start > end) {
+			// Periksa apakah tanggal berada di antara start sampai akhir tahun atau awal tahun sampai end
+			return checkDate >= start || checkDate <= end;
+		}
+
+		return checkDate >= start && checkDate <= end;
+	};
+
+	const activeGelombang = gelombangData.filter(item =>
+		isDateInRange(currentDate, item.tanggalMulai, item.tanggalSelesai)
+	);
+
+	console.log('Tanggal sekarang:', currentDate);
+	console.log('Gelombang Aktif:', activeGelombang);
 
 	return (
 		<>
@@ -68,16 +134,40 @@ const LandingPage = () => {
 									<span>"Kampus Vokasi Berbasis Teknologi Informasi"</span>
 								</div>
 
-								<div className="gelombang-box">
-									<div className="gelombang-wrapper">
-										<div className="gelombang-content-wrapper">
-											<p className="gelombang-text">Gelombang 4</p>
-											<p className="gelombang-date">
-												01 Juli {currentYear} s/d 30 Agustus {currentYear}
-											</p>
+								{activeGelombang.length > 0 ? (
+									activeGelombang.map((item, index) => (
+										<div key={index} className="gelombang-box">
+											<div className="gelombang-wrapper">
+												<div className="gelombang-content-wrapper">
+													<p className="gelombang-text">{item.gelombang}</p>
+													<p className="gelombang-date">
+														{item.tanggalMulai.toLocaleDateString('id-ID', {
+															day: '2-digit',
+															month: 'long',
+															year: 'numeric',
+														})}{' '}
+														s/d{' '}
+														{item.tanggalSelesai.toLocaleDateString('id-ID', {
+															day: '2-digit',
+															month: 'long',
+															year: 'numeric',
+														})}
+													</p>
+												</div>
+											</div>
+										</div>
+									))
+								) : (
+									<div className="gelombang-box">
+										<div className="gelombang-wrapper">
+											<div className="gelombang-content-wrapper">
+												<p className="text-white">
+													Tidak ada gelombang pendaftaran aktif saat ini.
+												</p>
+											</div>
 										</div>
 									</div>
-								</div>
+								)}
 
 								<div className="jumbotron-button-wrapper">
 									<a href="https://piksiinputserang.ac.id/pmb-v2/register">
@@ -415,13 +505,10 @@ const LandingPage = () => {
 													Kebijakan beasiswa full sarjana yang diimplementasikan
 													melalui program Kartu Cilegon Sejahtera (KCS) ini
 													menargetkan pemberian 1.000 beasiswa full sarjana per
-													tahun. Sehingga hingga {currentYear + 1} ditargetkan
-													bisa diberikan 5.000 beasiswa full sarjana untuk
-													mahasiswa asal Kota Cilegon. Mahasiswa yang mendapat
-													beasiswa ini akan menerima bantuan Rp3.000.000 per
-													semester. Tiap mahasiswa akan mendapat bantuan selama
-													8 semester yang berlaku di Perguruan Tinggi di seluruh
-													Indonesia
+													tahun. Mahasiswa yang mendapat beasiswa ini akan
+													menerima bantuan Rp3.000.000 per semester. Tiap
+													mahasiswa akan mendapat bantuan selama 8 semester yang
+													berlaku di Perguruan Tinggi di seluruh Indonesia
 												</p>
 
 												<a href="/beasiswa-pemkot-cilegon">
